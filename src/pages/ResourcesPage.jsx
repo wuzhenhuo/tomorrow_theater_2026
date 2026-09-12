@@ -84,10 +84,10 @@ const pageContent = {
       { name: '卡通小狼人', description: '可爱卡通风格角色', features: ['卡通风格', '动物形象', '趣味互动'] },
     ],
     devices: [
-      { name: 'Sony Mocopi', status: '推荐', description: '便携式动作捕捉设备，适合家庭使用' },
-      { name: 'Azure Kinect', status: '推荐', description: '高精度动作捕捉，专业级体验' },
-      { name: '诺亦腾惯性动捕', status: '专业', description: '专业级惯性动作捕捉系统' },
-      { name: '青瞳光学动捕系统', status: '专业', description: '高精度光学动作捕捉系统' },
+      { name: 'Sony Mocopi', status: '推荐', description: '便携式动作捕捉设备，适合家庭使用', url: 'https://electronics.sony.com/more/mocopi/all-mocopi/p/qmss1-uscxk' },
+      { name: 'Azure Kinect', status: '推荐', description: '高精度动作捕捉，专业级体验', url: 'https://azure.microsoft.com/en-us/products/kinect-dk/' },
+      { name: '诺亦腾惯性动捕', status: '专业', description: '专业级惯性动作捕捉系统', url: 'https://www.noitom.com.cn/' },
+      { name: '青瞳光学动捕系统', status: '专业', description: '高精度光学动作捕捉系统', url: 'https://www.chingmu.com/' },
     ],
     areas: [
       { name: '艺术馆区域', description: '展示数字装置与概念设计图，可上传图片进行互动展示', features: ['虚拟美术馆', '图片上传', '互动展示'] },
@@ -246,10 +246,10 @@ const pageContent = {
       { name: '卡通小狼人', description: '可愛卡通風格角色', features: ['卡通風格', '動物形象', '趣味互動'] },
     ],
     devices: [
-      { name: 'Sony Mocopi', status: '推薦', description: '便攜式動作捕捉設備，適合家庭使用' },
-      { name: 'Azure Kinect', status: '推薦', description: '高精度動作捕捉，專業級體驗' },
-      { name: '諾亦騰慣性動捕', status: '專業', description: '專業級慣性動作捕捉系統' },
-      { name: '青瞳光學動捕系統', status: '專業', description: '高精度光學動作捕捉系統' },
+      { name: 'Sony Mocopi', status: '推薦', description: '便攜式動作捕捉設備，適合家庭使用', url: 'https://electronics.sony.com/more/mocopi/all-mocopi/p/qmss1-uscxk' },
+      { name: 'Azure Kinect', status: '推薦', description: '高精度動作捕捉，專業級體驗', url: 'https://azure.microsoft.com/en-us/products/kinect-dk/' },
+      { name: '諾亦騰慣性動捕', status: '專業', description: '專業級慣性動作捕捉系統', url: 'https://www.noitom.com.cn/' },
+      { name: '青瞳光學動捕系統', status: '專業', description: '高精度光學動作捕捉系統', url: 'https://www.chingmu.com/' },
     ],
     areas: [
       { name: '藝術館區域', description: '展示數字裝置與概念設計圖，可上傳圖片進行互動展示', features: ['虛擬美術館', '圖片上傳', '互動展示'] },
@@ -408,10 +408,10 @@ const pageContent = {
       { name: 'Cartoon Werewolf', description: 'Cute cartoon-style character', features: ['Cartoon Style', 'Animal Character', 'Fun Interaction'] },
     ],
     devices: [
-      { name: 'Sony Mocopi', status: 'Recommended', description: 'Portable motion capture device, suitable for home use' },
-      { name: 'Azure Kinect', status: 'Recommended', description: 'High-precision motion capture, professional experience' },
-      { name: 'Noitom Inertial MoCap', status: 'Professional', description: 'Professional inertial motion capture system' },
-      { name: 'Chingmu Optical MoCap', status: 'Professional', description: 'High-precision optical motion capture system' },
+      { name: 'Sony Mocopi', status: 'Recommended', description: 'Portable motion capture device, suitable for home use', url: 'https://electronics.sony.com/more/mocopi/all-mocopi/p/qmss1-uscxk' },
+      { name: 'Azure Kinect', status: 'Recommended', description: 'High-precision motion capture, professional experience', url: 'https://azure.microsoft.com/en-us/products/kinect-dk/' },
+      { name: 'Noitom Inertial MoCap', status: 'Professional', description: 'Professional inertial motion capture system', url: 'https://www.noitom.com.cn/' },
+      { name: 'Chingmu Optical MoCap', status: 'Professional', description: 'High-precision optical motion capture system', url: 'https://www.chingmu.com/' },
     ],
     areas: [
       { name: 'Art Gallery Area', description: 'Display digital installations and concept designs, upload images for interactive display', features: ['Virtual Museum', 'Image Upload', 'Interactive Display'] },
@@ -811,7 +811,18 @@ const ResourcesPage = () => {
                 {c.devices.map((device, index) => (
                   <div key={index} className="bg-slate-900/30 rounded-lg p-6 border border-slate-700/50 hover:border-purple-500/50 transition-colors">
                     <div className="flex justify-between items-start mb-3">
-                      <h4 className="text-white font-semibold">{device.name}</h4>
+                      {device.url ? (
+                        <a
+                          href={device.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white font-semibold hover:text-purple-400 hover:underline"
+                        >
+                          {device.name}
+                        </a>
+                      ) : (
+                        <h4 className="text-white font-semibold">{device.name}</h4>
+                      )}
                       <Badge variant={device.status === '推荐' || device.status === '推薦' || device.status === 'Recommended' ? 'default' : 'secondary'} className="text-xs">
                         {device.status}
                       </Badge>

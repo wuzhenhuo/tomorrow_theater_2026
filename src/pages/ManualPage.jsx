@@ -143,25 +143,29 @@ const ManualPage = () => {
       name: "Sony Mocopi",
       status: "推薦",
       description: "便攜式動作捕捉設備，適合家庭使用",
-      badge: "推薦"
+      badge: "推薦",
+      url: "https://electronics.sony.com/more/mocopi/all-mocopi/p/qmss1-uscxk"
     },
     {
       name: "Azure Kinect",
       status: "推薦",
       description: "高精度動作捕捉，專業級體驗",
-      badge: "推薦"
+      badge: "推薦",
+      url: "https://azure.microsoft.com/en-us/products/kinect-dk/"
     },
     {
       name: "諾亦騰慣性動捕",
       status: "專業",
       description: "專業級慣性動作捕捉系統",
-      badge: "專業"
+      badge: "專業",
+      url: "https://www.noitom.com.cn/"
     },
     {
       name: "青瞳光學動捕系統",
       status: "專業",
       description: "高精度光學動作捕捉系統",
-      badge: "專業"
+      badge: "專業",
+      url: "https://www.chingmu.com/"
     }
   ];
 
@@ -286,7 +290,18 @@ const ManualPage = () => {
             {devices.map((device, index) => (
               <div key={index} className="bg-slate-900/30 rounded-lg p-6 border border-slate-700/50 hover:border-purple-500/50 transition-colors">
                 <div className="flex justify-between items-start mb-3">
-                  <h4 className="text-white font-semibold">{device.name}</h4>
+                  {device.url ? (
+                    <a
+                      href={device.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white font-semibold hover:text-purple-400 hover:underline"
+                    >
+                      {device.name}
+                    </a>
+                  ) : (
+                    <h4 className="text-white font-semibold">{device.name}</h4>
+                  )}
                   <Badge variant={device.status === "推薦" ? "default" : "secondary"} className="text-xs">
                     {device.badge}
                   </Badge>
