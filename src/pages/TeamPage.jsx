@@ -62,7 +62,7 @@ const pageContent = {
       { name: 'Claw', role: '首席经理', description: 'AI项目管理助手，负责项目协调与进度追踪', image: '/team/claw.png' },
     ],
     partners: {
-      academic: ['澳门科技大学', '澳门国际青年智库', '澳门舞蹈家协会', '北京师范大学未来设计学院（珠海）', '天津传媒学院', '香港科技大学霍英东研究院'],
+      academic: ['澳门科技大学', '澳门国际青年智库', '澳门舞蹈家协会', '北京师范大学未来设计学院（珠海）', '天津传媒学院'],
       technology: ['索尼 (SONY)', '理光 (RICOH)', 'HTC', '微软中国', '亚马逊云 (AWS)', '华为 (HUAWEI)', 'Unity Technologies'],
       industry: ['北京澜景科技有限公司enlightv', '北京诺亦腾科技有限公司 (Noitom)', '上海青瞳科技有限公司 (Chingmu Technology)', 'Ltd. Bite Dance-PICO'],
     },
@@ -120,7 +120,7 @@ const pageContent = {
       { name: 'Claw', role: '首席經理', description: 'AI項目管理助手，負責項目協調與進度追蹤', image: '/team/claw.png' },
     ],
     partners: {
-      academic: ['澳門科技大學', '澳門國際青年智庫', '澳門舞蹈家協會', '北京師範大學未來設計學院（珠海）', '天津傳媒學院', '香港科技大學霍英東研究院'],
+      academic: ['澳門科技大學', '澳門國際青年智庫', '澳門舞蹈家協會', '北京師範大學未來設計學院（珠海）', '天津傳媒學院'],
       technology: ['索尼 (SONY)', '理光 (RICOH)', 'HTC', '微軟中國', '亞馬遜雲 (AWS)', '華為 (HUAWEI)', 'Unity Technologies'],
       industry: ['北京瀾景科技有限公司enlightv', '北京諾亦騰科技有限公司 (Noitom)', '上海青瞳科技有限公司 (Chingmu Technology)', 'Ltd. Bite Dance-PICO'],
     },
@@ -178,7 +178,7 @@ const pageContent = {
       { name: 'Claw', role: 'Chief Manager', description: 'AI project management assistant, responsible for project coordination and progress tracking', image: '/team/claw.png' },
     ],
     partners: {
-      academic: ['Macao University of Science and Technology', 'Macao International Youth Think Tank', 'Macao Dancers Association', 'BNU Future Design School (Zhuhai)', 'Tianjin Media College', 'HKUST Fok Ying Tung Research Institute'],
+      academic: ['Macao University of Science and Technology', 'Macao International Youth Think Tank', 'Macao Dancers Association', 'BNU Future Design School (Zhuhai)', 'Tianjin Media College'],
       technology: ['索尼 (SONY)', '理光 (RICOH)', 'HTC', '微软中国', '亚马逊云 (AWS)', '华为 (HUAWEI)', 'Unity Technologies'],
       industry: ['北京澜景科技有限公司enlightv', '北京诺亦腾科技有限公司 (Noitom)', '上海青瞳科技有限公司 (Chingmu Technology)', 'Ltd. Bite Dance-PICO'],
     },

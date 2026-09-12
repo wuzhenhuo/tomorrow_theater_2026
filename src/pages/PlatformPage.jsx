@@ -62,7 +62,7 @@ const pageContent = {
     locations: [
       '澳门青年创业孵化中心（澳门）', '聚能湾国家级科技企业孵化中心（上海）',
       '北京师范大学未来设计美术馆（珠海）', '798深澜AI中心（北京）',
-      '香港科技大学霍英东研究院（广州）', '中关村AI北纬社区（北京·OPC）',
+      '中关村AI北纬社区（北京·OPC）',
     ],
     papers: [
       { title: 'Theatre of Tomorrow - A Virtual Exhibition and Performing Arts Platform Created by Digital Game Technology', author: 'Wu, Z. (2023)', publisher: 'Singapore, Springer Nature Singapore', link: 'https://doi.org/10.1007/978-981-99-8248-6_41' },
@@ -123,7 +123,7 @@ const pageContent = {
     locations: [
       '澳門青年創業孵化中心（澳門）', '聚能灣國家級科技企業孵化中心（上海）',
       '北京師範大學未來設計美術館（珠海）', '798深瀾AI中心（北京）',
-      '香港科技大學霍英東研究院（廣州）', '中關村AI北緯社區（北京·OPC）',
+      '中關村AI北緯社區（北京·OPC）',
     ],
     papers: [
       { title: 'Theatre of Tomorrow - A Virtual Exhibition and Performing Arts Platform Created by Digital Game Technology', author: 'Wu, Z. (2023)', publisher: 'Singapore, Springer Nature Singapore', link: 'https://doi.org/10.1007/978-981-99-8248-6_41' },
@@ -184,7 +184,7 @@ const pageContent = {
     locations: [
       'Macao Youth Entrepreneurship Incubation Center', 'Juneng Bay National Tech Enterprise Incubation Center (Shanghai)',
       'BNU Future Design Art Museum (Zhuhai)', '798 Shenlan AI Center (Beijing)',
-      'HKUST Fok Ying Tung Research Institute (Guangzhou)', 'Zhongguancun AI Latitude Community (Beijing · OPC)',
+      'Zhongguancun AI Latitude Community (Beijing · OPC)',
     ],
     papers: [
       { title: 'Theatre of Tomorrow - A Virtual Exhibition and Performing Arts Platform Created by Digital Game Technology', author: 'Wu, Z. (2023)', publisher: 'Singapore, Springer Nature Singapore', link: 'https://doi.org/10.1007/978-981-99-8248-6_41' },

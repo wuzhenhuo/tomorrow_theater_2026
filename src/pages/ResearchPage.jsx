@@ -102,10 +102,8 @@ const pageContent = {
     ],
     applications: [
       { location: '澳门青年创业孵化中心', region: '澳门', status: '运营中', description: '作为项目发源地，为澳门青年创业者提供数字艺术创作平台', features: ['创业孵化', '艺术创作', '技术培训'] },
-      { location: '聚能湾国家级科技企业孵化中心', region: '上海', status: '运营中', description: '在上海设立技术研发中心，推动平台技术升级和产业化应用', features: ['技术研发', '产业孵化', '人才培养'] },
       { location: '北京师范大学未来设计美术馆', region: '珠海', status: '合作中', description: '与高等院校合作，开展数字艺术教育和学术研究', features: ['学术研究', '教育实践', '展览展示'] },
       { location: '798深澜AI中心', region: '北京', status: '合作中', description: '在北京艺术区设立展示中心，推广数字艺术创作理念', features: ['艺术展示', '技术交流', '文化推广'] },
-      { location: '香港科技大学霍英东研究院', region: '广州', status: '合作中', description: '与香港科技大学合作，推动科技创新与人才培养', features: ['科研合作', '技术转化', '人才交流'] },
       { location: '中关村AI北纬社区（OPC）', region: '北京', status: '合作中', description: '在中关村AI核心区域设立合作基地，推动人工智能技术应用', features: ['AI技术', '产业对接', '创新孵化'] },
     ],
     impacts: [
@@ -215,10 +213,8 @@ const pageContent = {
     ],
     applications: [
       { location: '澳門青年創業孵化中心', region: '澳門', status: '運營中', description: '作為項目發源地，為澳門青年創業者提供數字藝術創作平台', features: ['創業孵化', '藝術創作', '技術培訓'] },
-      { location: '聚能灣國家級科技企業孵化中心', region: '上海', status: '運營中', description: '在上海設立技術研發中心，推動平台技術升級和產業化應用', features: ['技術研發', '產業孵化', '人才培養'] },
       { location: '北京師範大學未來設計美術館', region: '珠海', status: '合作中', description: '與高等院校合作，開展數字藝術教育和學術研究', features: ['學術研究', '教育實踐', '展覽展示'] },
       { location: '798深瀾AI中心', region: '北京', status: '合作中', description: '在北京藝術區設立展示中心，推廣數字藝術創作理念', features: ['藝術展示', '技術交流', '文化推廣'] },
-      { location: '香港科技大學霍英東研究院', region: '廣州', status: '合作中', description: '與香港科技大學合作，推動科技創新與人才培養', features: ['科研合作', '技術轉化', '人才交流'] },
       { location: '中關村AI北緯社區（OPC）', region: '北京', status: '合作中', description: '在中關村AI核心區域設立合作基地，推動人工智能技術應用', features: ['AI技術', '產業對接', '創新孵化'] },
     ],
     impacts: [
@@ -328,10 +324,8 @@ const pageContent = {
     ],
     applications: [
       { location: 'Macao Youth Entrepreneurship Incubation Center', region: 'Macao', status: 'Operating', description: 'As the project birthplace, provides digital art creation platform for Macao youth entrepreneurs', features: ['Startup Incubation', 'Art Creation', 'Tech Training'] },
-      { location: 'Juneng Bay National Tech Enterprise Incubation Center', region: 'Shanghai', status: 'Operating', description: 'Established tech R&D center in Shanghai, advancing platform technology and commercialization', features: ['Tech R&D', 'Industry Incubation', 'Talent Development'] },
       { location: 'BNU Future Design Art Museum', region: 'Zhuhai', status: 'Partnering', description: 'Collaborating with higher education for digital art education and academic research', features: ['Academic Research', 'Educational Practice', 'Exhibition'] },
       { location: '798 Shenlan AI Center', region: 'Beijing', status: 'Partnering', description: 'Exhibition center in Beijing art district promoting digital art creation concepts', features: ['Art Exhibition', 'Tech Exchange', 'Cultural Promotion'] },
-      { location: 'HKUST Fok Ying Tung Research Institute', region: 'Guangzhou', status: 'Partnering', description: 'Partnering with HKUST to advance tech innovation and talent cultivation', features: ['Research Collaboration', 'Tech Transfer', 'Talent Exchange'] },
       { location: 'Zhongguancun AI Latitude Community (OPC)', region: 'Beijing', status: 'Partnering', description: 'Cooperation base in Zhongguancun AI core area to advance AI technology application', features: ['AI Technology', 'Industry Matching', 'Innovation Incubation'] },
     ],
     impacts: [

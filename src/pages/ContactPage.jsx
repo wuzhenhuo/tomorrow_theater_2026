@@ -43,6 +43,7 @@ const pageContent = {
     sendEmail: '发送邮件咨询',
     callUs: '电话联系我们',
     tryNow: '新版本预约',
+    linkText: '链接',
     contactInfo: [
       { title: '公司信息', details: ['明日剧场团队', '专注数字艺术与元宇宙技术', '北京师范大学未来设计学院种子基金支持'] },
       { title: '联系电话', details: ['(853) 66810358', '+86 13810745684', '工作时间：周一至周五 9:00-18:00', '紧急联系请发送邮件'] },
@@ -50,11 +51,9 @@ const pageContent = {
       { title: '办公地址', details: ['澳门特别行政区', '澳门青年创业孵化中心', '其他合作地点遍布粤港澳大湾区'] },
     ],
     locations: [
-      { name: '澳门总部', address: '澳门青年创业孵化中心', description: '项目总部，负责整体运营和战略规划', status: '总部' },
-      { name: '上海研发中心', address: '聚能湾国家级科技企业孵化中心', description: '技术研发和产品创新中心', status: '研发中心' },
+      { name: '澳门总部', address: '澳门青年创业孵化中心，澳门宋玉生广场258号建兴龙广场14楼G座', description: '项目总部，负责整体运营和战略规划', status: '总部' },
       { name: '珠海学术中心', address: '北京师范大学未来设计美术馆', description: '学术研究和教育合作基地', status: '学术合作' },
       { name: '北京展示中心', address: '798深澜AI中心', description: '技术展示和文化推广中心', status: '展示中心' },
-      { name: '广州科研中心', address: '香港科技大学霍英东研究院', description: '科技创新与人才培养合作基地', status: '科研合作' },
       { name: '北京AI创新中心', address: '中关村AI北纬社区（OPC）', description: '人工智能技术应用与产业对接中心', status: '创新合作' },
     ],
     cooperationTypes: [
@@ -64,10 +63,9 @@ const pageContent = {
     ],
     aigcTools: [
       { title: '明日剧场数智展演平台', description: '国内首个元宇宙虚拟剧场平台', url: 'https://auqliwvr.manus.space/' },
-      { title: 'AI图像设计师', description: '智能产品设计和概念生成工具', url: 'https://v0-image-upload-app-lime-wuzhednhuo-1982.vercel.app/' },
+      { title: 'AI图像设计师', description: '智能产品设计和概念生成工具', url: 'https://app-flux-wuzhenhuo-2024-1982-1987.streamlit.app/' },
       { title: 'AI视频设计师', description: '专业的AI视频生成和编辑工具', url: 'https://v0-modern-movie-generator-ui.vercel.app/' },
-      { title: 'AI图像设计1', description: '基于Flux的智能图像生成工具', url: 'https://flux-fal-openai-appgit-xcdjrcva2qcycdx42scnda.streamlit.app/' },
-      { title: 'AI图像设计2', description: '高级AI图像创作和编辑平台', url: 'https://app-flux-wuzhenhuo-2024-1982-1987.streamlit.app/' },
+      { title: 'AI图像设计2', description: '高级AI图像创作和编辑平台', url: 'https://flux-fal-openai-appgit-xcdjrcva2qcycdx42scnda.streamlit.app/' },
     ],
     faqs: [
       { q: '如何开始与明日剧场的合作？', a: '您可以通过邮件、电话或在线留言的方式联系我们。我们会根据您的具体需求，安排专业团队与您详细沟通，制定合适的合作方案。' },
@@ -97,6 +95,7 @@ const pageContent = {
     sendEmail: '發送郵件諮詢',
     callUs: '電話聯繫我們',
     tryNow: '新版本預約',
+    linkText: '鏈接',
     contactInfo: [
       { title: '公司信息', details: ['澳門未來視野科技有限公司', '專注數字藝術與元宇宙技術', '北京師範大學未來設計學院種子基金支持'] },
       { title: '聯繫電話', details: ['(853) 66810358', '+86 13810745684', '工作時間：周一至周五 9:00-18:00', '緊急聯繫請發送郵件'] },
@@ -104,11 +103,9 @@ const pageContent = {
       { title: '辦公地址', details: ['澳門特別行政區', '澳門青年創業孵化中心', '其他合作地點遍布粵港澳大灣區'] },
     ],
     locations: [
-      { name: '澳門總部', address: '澳門青年創業孵化中心', description: '項目總部，負責整體運營和戰略規劃', status: '總部' },
-      { name: '上海研發中心', address: '聚能灣國家級科技企業孵化中心', description: '技術研發和產品創新中心', status: '研發中心' },
+      { name: '澳門總部', address: '澳門青年創業孵化中心，澳門宋玉生廣場258號建興龍廣場14樓G座', description: '項目總部，負責整體運營和戰略規劃', status: '總部' },
       { name: '珠海學術中心', address: '北京師範大學未來設計美術館', description: '學術研究和教育合作基地', status: '學術合作' },
       { name: '北京展示中心', address: '798深瀾AI中心', description: '技術展示和文化推廣中心', status: '展示中心' },
-      { name: '廣州科研中心', address: '香港科技大學霍英東研究院', description: '科技創新與人才培養合作基地', status: '科研合作' },
       { name: '北京AI創新中心', address: '中關村AI北緯社區（OPC）', description: '人工智能技術應用與產業對接中心', status: '創新合作' },
     ],
     cooperationTypes: [
@@ -118,10 +115,9 @@ const pageContent = {
     ],
     aigcTools: [
       { title: '明日劇場數智展演平台', description: '國內首個元宇宙虛擬劇場平台', url: 'https://auqliwvr.manus.space/' },
-      { title: 'AI圖像設計師', description: '智能產品設計和概念生成工具', url: 'https://v0-image-upload-app-lime-wuzhednhuo-1982.vercel.app/' },
+      { title: 'AI圖像設計師', description: '智能產品設計和概念生成工具', url: 'https://app-flux-wuzhenhuo-2024-1982-1987.streamlit.app/' },
       { title: 'AI視頻設計師', description: '專業的AI視頻生成和編輯工具', url: 'https://v0-modern-movie-generator-ui.vercel.app/' },
-      { title: 'AI圖像設計1', description: '基於Flux的智能圖像生成工具', url: 'https://flux-fal-openai-appgit-xcdjrcva2qcycdx42scnda.streamlit.app/' },
-      { title: 'AI圖像設計2', description: '高級AI圖像創作和編輯平台', url: 'https://app-flux-wuzhenhuo-2024-1982-1987.streamlit.app/' },
+      { title: 'AI圖像設計2', description: '高級AI圖像創作和編輯平台', url: 'https://flux-fal-openai-appgit-xcdjrcva2qcycdx42scnda.streamlit.app/' },
     ],
     faqs: [
       { q: '如何開始與明日劇場的合作？', a: '您可以通過郵件、電話或在線留言的方式聯繫我們。我們會根據您的具體需求，安排專業團隊與您詳細溝通，制定合適的合作方案。' },
@@ -151,6 +147,7 @@ const pageContent = {
     sendEmail: 'Send Email Inquiry',
     callUs: 'Call Us',
     tryNow: 'Join Waitlist',
+    linkText: 'Link',
     contactInfo: [
       { title: 'Company Info', details: ['Future Vision Technology (Macao) Co., Ltd.', 'Focused on digital art and metaverse technology', 'Supported by BNU Future Design School Seed Fund'] },
       { title: 'Contact Phone', details: ['(853) 66810358', '+86 13810745684', 'Business hours: Mon–Fri 9:00–18:00', 'For urgent inquiries please send email'] },
@@ -158,11 +155,9 @@ const pageContent = {
       { title: 'Office Address', details: ['Macao Special Administrative Region', 'Macao Youth Entrepreneurship Incubation Center', 'Other cooperation locations throughout the Greater Bay Area'] },
     ],
     locations: [
-      { name: 'Macao Headquarters', address: 'Macao Youth Entrepreneurship Incubation Center', description: 'Project headquarters, responsible for overall operations and strategic planning', status: 'Headquarters' },
-      { name: 'Shanghai R&D Center', address: 'Juneng Bay National Tech Enterprise Incubation Center', description: 'Technology R&D and product innovation center', status: 'R&D Center' },
+      { name: 'Macao Headquarters', address: "Macao Youth Entrepreneurship Incubation Center, Alameda Dr. Carlos D'assumpcao, Kin Heng Long Plaza, 14 Andar G, Macau", description: 'Project headquarters, responsible for overall operations and strategic planning', status: 'Headquarters' },
       { name: 'Zhuhai Academic Center', address: 'BNU Future Design Art Museum', description: 'Academic research and education cooperation base', status: 'Academic Partner' },
       { name: 'Beijing Exhibition Center', address: '798 Shenlan AI Center', description: 'Technology exhibition and cultural promotion center', status: 'Exhibition Center' },
-      { name: 'Guangzhou Research Center', address: 'HKUST Fok Ying Tung Research Institute', description: 'Tech innovation and talent cultivation cooperation base', status: 'Research Partner' },
       { name: 'Beijing AI Innovation Center', address: 'Zhongguancun AI Latitude Community (OPC)', description: 'AI technology application and industry matching center', status: 'Innovation Partner' },
     ],
     cooperationTypes: [
@@ -172,10 +167,9 @@ const pageContent = {
     ],
     aigcTools: [
       { title: 'Theater of Tomorrow Smart Platform', description: "China's first metaverse virtual theater platform", url: 'https://auqliwvr.manus.space/' },
-      { title: 'AI Image Designer', description: 'Intelligent product design and concept generation tool', url: 'https://v0-image-upload-app-lime-wuzhednhuo-1982.vercel.app/' },
+      { title: 'AI Image Designer', description: 'Intelligent product design and concept generation tool', url: 'https://app-flux-wuzhenhuo-2024-1982-1987.streamlit.app/' },
       { title: 'AI Video Designer', description: 'Professional AI video generation and editing tool', url: 'https://v0-modern-movie-generator-ui.vercel.app/' },
-      { title: 'AI Image Designer 1', description: 'Flux-based intelligent image generation tool', url: 'https://flux-fal-openai-appgit-xcdjrcva2qcycdx42scnda.streamlit.app/' },
-      { title: 'AI Image Designer 2', description: 'Advanced AI image creation and editing platform', url: 'https://app-flux-wuzhenhuo-2024-1982-1987.streamlit.app/' },
+      { title: 'AI Image Designer 2', description: 'Advanced AI image creation and editing platform', url: 'https://flux-fal-openai-appgit-xcdjrcva2qcycdx42scnda.streamlit.app/' },
     ],
     faqs: [
       { q: 'How do I start cooperating with Theater of Tomorrow?', a: 'You can contact us via email, phone, or online message. We will arrange a professional team to discuss your needs in detail and develop an appropriate cooperation plan.' },
@@ -212,7 +206,6 @@ const aigcToolIcons = [
   <Globe className="w-6 h-6 text-cyan-400" />,
   <Users className="w-6 h-6 text-purple-400" />,
   <MessageSquare className="w-6 h-6 text-green-400" />,
-  <ExternalLink className="w-6 h-6 text-yellow-400" />,
   <ExternalLink className="w-6 h-6 text-pink-400" />,
 ];
 
@@ -461,13 +454,25 @@ const ContactPage = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button
-                    className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white"
-                    onClick={openWaitlist}
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    {c.tryNow}
-                  </Button>
+                  {['AI图像设计师', 'AI圖像設計師', 'AI Image Designer', 'AI图像设计2', 'AI圖像設計2', 'AI Image Designer 2'].includes(tool.title) ? (
+                    <Button
+                      asChild
+                      className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white"
+                    >
+                      <a href={tool.url} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        {c.linkText}
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button
+                      className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white"
+                      onClick={openWaitlist}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      {c.tryNow}
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}

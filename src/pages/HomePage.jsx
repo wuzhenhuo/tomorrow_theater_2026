@@ -71,7 +71,6 @@ const pageContent = {
       '聚能湾国家级科技企业孵化中心（上海）',
       '北京师范大学未来设计美术馆（珠海）',
       '澳门科技大学人文艺术学院',
-      '香港科技大学霍英东研究院',
       '中关村AI北纬社区（OPC）',
     ],
     ctaTitle: '开启您的数字艺术之旅',
@@ -98,6 +97,11 @@ const pageContent = {
       {
         date: '2026年10月',
         text: '明日剧场团队与沙特国王大学共同举办线上工作坊，吴振博士和马明博士主持。',
+      },
+      {
+        date: '2026年7月21日',
+        text: '吴振博士受聘澳城大国艺金课程，在澳门城市大学横琴粤澳高等研究院开展专题授课。',
+        link: 'https://mp.weixin.qq.com/s/kM2saBMa8OtsCOeCV1o5C',
       },
     ],
   },
@@ -150,7 +154,6 @@ const pageContent = {
       '聚能灣國家級科技企業孵化中心（上海）',
       '北京師範大學未來設計美術館（珠海）',
       '澳門科技大學人文藝術學院',
-      '香港科技大學霍英東研究院',
       '中關村AI北緯社區（OPC）',
     ],
     ctaTitle: '開啟您的數字藝術之旅',
@@ -177,6 +180,11 @@ const pageContent = {
       {
         date: '2026年10月',
         text: '明日劇場團隊與沙特國王大學共同舉辦線上工作坊，吳振博士和馬明博士主持。',
+      },
+      {
+        date: '2026年7月21日',
+        text: '吳振博士受聘澳城大國藝金課程，在澳門城市大學橫琴粵澳高等研究院開展專題授課。',
+        link: 'https://mp.weixin.qq.com/s/kM2saBMa8OtsCOeCV1o5C',
       },
     ],
   },
@@ -229,7 +237,6 @@ const pageContent = {
       'Juneng Bay National Tech Enterprise Incubation Center (Shanghai)',
       'BNU Future Design Art Museum (Zhuhai)',
       'Macao University of Science and Technology, Faculty of Humanities and Arts',
-      'HKUST Fok Ying Tung Research Institute',
       'Zhongguancun AI Latitude Community (OPC)',
     ],
     ctaTitle: 'Start Your Digital Art Journey',
@@ -256,6 +263,11 @@ const pageContent = {
       {
         date: 'October 2026',
         text: 'The Theater of Tomorrow team and King Saud University jointly held an online workshop, hosted by Dr. Wu Zhen and Dr. Ma Ming.',
+      },
+      {
+        date: 'July 21, 2026',
+        text: 'Dr. Wu Zhen was appointed to the "Golden Course of National Arts" program at Macau City University, delivering a special lecture at the Hengqin Guangdong-Macao Institute for Advanced Study of Macau City University.',
+        link: 'https://mp.weixin.qq.com/s/kM2saBMa8OtsCOeCV1o5C',
       },
     ],
   },
@@ -481,7 +493,20 @@ const HomePage = () => {
                     <div style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--accent)', flexShrink: 0, marginTop: 7 }} />
                     <div>
                       <div className="text-label" style={{ marginBottom: 8, color: 'var(--accent)' }}>{item.date}</div>
-                      <p style={{ margin: 0, fontSize: 14, color: 'var(--text-primary)', lineHeight: 1.7 }}>{item.text}</p>
+                      {item.link ? (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ margin: 0, fontSize: 14, color: 'var(--text-primary)', lineHeight: 1.7, textDecoration: 'none' }}
+                          onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; }}
+                          onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; }}
+                        >
+                          {item.text}
+                        </a>
+                      ) : (
+                        <p style={{ margin: 0, fontSize: 14, color: 'var(--text-primary)', lineHeight: 1.7 }}>{item.text}</p>
+                      )}
                     </div>
                   </div>
                 </ScrollReveal>
