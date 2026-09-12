@@ -101,7 +101,7 @@ const pageContent = {
       {
         date: '2026年7月21日',
         text: '吴振博士受聘澳城大国艺金课程，在澳门城市大学横琴粤澳高等研究院开展专题授课。',
-        link: 'https://mp.weixin.qq.com/s/kM2saBMa8OtsCOeCV1o5C',
+        link: 'https://mp.weixin.qq.com/s/kM2saBMa8OtsCOeCV1o5CA',
       },
     ],
   },
@@ -184,7 +184,7 @@ const pageContent = {
       {
         date: '2026年7月21日',
         text: '吳振博士受聘澳城大國藝金課程，在澳門城市大學橫琴粵澳高等研究院開展專題授課。',
-        link: 'https://mp.weixin.qq.com/s/kM2saBMa8OtsCOeCV1o5C',
+        link: 'https://mp.weixin.qq.com/s/kM2saBMa8OtsCOeCV1o5CA',
       },
     ],
   },
@@ -267,7 +267,7 @@ const pageContent = {
       {
         date: 'July 21, 2026',
         text: 'Dr. Wu Zhen was appointed to the "Golden Course of National Arts" program at Macau City University, delivering a special lecture at the Hengqin Guangdong-Macao Institute for Advanced Study of Macau City University.',
-        link: 'https://mp.weixin.qq.com/s/kM2saBMa8OtsCOeCV1o5C',
+        link: 'https://mp.weixin.qq.com/s/kM2saBMa8OtsCOeCV1o5CA',
       },
     ],
   },
