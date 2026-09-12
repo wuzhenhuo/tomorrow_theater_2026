@@ -695,8 +695,9 @@ const ResourcesPage = () => {
               className={`px-6 py-3 rounded-full transition-all duration-300 ${
                 activeTab === 'manual'
                   ? 'bg-gradient-to-r from-cyan-500 to-purple-500 text-white'
-                  : 'bg-white/10 text-white/80 hover:bg-white/20'
+                  : ''
               }`}
+              style={activeTab === 'manual' ? undefined : { background: 'var(--bg-elevated)', color: 'var(--text-secondary)' }}
             >
               <Settings className="w-5 h-5 mr-2" />
               {c.manualTab}
@@ -706,8 +707,9 @@ const ResourcesPage = () => {
               className={`px-6 py-3 rounded-full transition-all duration-300 ${
                 activeTab === 'learning'
                   ? 'bg-gradient-to-r from-cyan-500 to-purple-500 text-white'
-                  : 'bg-white/10 text-white/80 hover:bg-white/20'
+                  : ''
               }`}
+              style={activeTab === 'learning' ? undefined : { background: 'var(--bg-elevated)', color: 'var(--text-secondary)' }}
             >
               <BookOpen className="w-5 h-5 mr-2" />
               {c.learningTab}
@@ -717,8 +719,9 @@ const ResourcesPage = () => {
               className={`px-6 py-3 rounded-full transition-all duration-300 ${
                 activeTab === 'aigc'
                   ? 'bg-gradient-to-r from-cyan-500 to-purple-500 text-white'
-                  : 'bg-white/10 text-white/80 hover:bg-white/20'
+                  : ''
               }`}
+              style={activeTab === 'aigc' ? undefined : { background: 'var(--bg-elevated)', color: 'var(--text-secondary)' }}
             >
               <Sparkles className="w-5 h-5 mr-2" />
               {c.aigcTab}
@@ -728,8 +731,9 @@ const ResourcesPage = () => {
               className={`px-6 py-3 rounded-full transition-all duration-300 ${
                 activeTab === 'dancedb'
                   ? 'bg-gradient-to-r from-cyan-500 to-purple-500 text-white'
-                  : 'bg-white/10 text-white/80 hover:bg-white/20'
+                  : ''
               }`}
+              style={activeTab === 'dancedb' ? undefined : { background: 'var(--bg-elevated)', color: 'var(--text-secondary)' }}
             >
               <Database className="w-5 h-5 mr-2" />
               {c.dancedbTab}
@@ -739,8 +743,9 @@ const ResourcesPage = () => {
               className={`px-6 py-3 rounded-full transition-all duration-300 ${
                 activeTab === 'aigcworks'
                   ? 'bg-gradient-to-r from-cyan-500 to-purple-500 text-white'
-                  : 'bg-white/10 text-white/80 hover:bg-white/20'
+                  : ''
               }`}
+              style={activeTab === 'aigcworks' ? undefined : { background: 'var(--bg-elevated)', color: 'var(--text-secondary)' }}
             >
               <Palette className="w-5 h-5 mr-2" />
               {c.aigcWorksTab}

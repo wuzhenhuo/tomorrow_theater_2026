@@ -494,6 +494,11 @@ body {
   .course-grid { grid-template-columns: 1fr; gap: var(--space-10); }
 }
 
+/* ── News grid responsive ── */
+@media (max-width: 640px) {
+  .news-grid { grid-template-columns: 1fr !important; }
+}
+
 /* ── Hero gradient overlay ── */
 .hero-gradient-overlay {
   position: absolute;

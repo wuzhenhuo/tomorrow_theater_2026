@@ -70,6 +70,7 @@ const pageContent = {
         author: '2024 International Symposium on Ecological Design Engineering, Artificial Intelligence, and Sustainable Development',
         publisher: '2024ISEDEAISD (Ei Compendex)',
         type: '国际会议论文',
+        link: 'https://ieeexplore.ieee.org/document/11607407',
         description: '研究沉浸式智能虚拟环境和数字化身在增强学生归属感方面的作用，为数字教育提供理论支撑。',
         keywords: ['虚拟环境', '数字化身', '教育技术', '归属感'],
       },
@@ -105,7 +106,7 @@ const pageContent = {
       { location: '北京师范大学未来设计美术馆', region: '珠海', status: '合作中', description: '与高等院校合作，开展数字艺术教育和学术研究', features: ['学术研究', '教育实践', '展览展示'] },
       { location: '798深澜AI中心', region: '北京', status: '合作中', description: '在北京艺术区设立展示中心，推广数字艺术创作理念', features: ['艺术展示', '技术交流', '文化推广'] },
       { location: '香港科技大学霍英东研究院', region: '广州', status: '合作中', description: '与香港科技大学合作，推动科技创新与人才培养', features: ['科研合作', '技术转化', '人才交流'] },
-      { location: '中关村AI北纬社区', region: '北京', status: '合作中', description: '在中关村AI核心区域设立合作基地，推动人工智能技术应用', features: ['AI技术', '产业对接', '创新孵化'] },
+      { location: '中关村AI北纬社区（OPC）', region: '北京', status: '合作中', description: '在中关村AI核心区域设立合作基地，推动人工智能技术应用', features: ['AI技术', '产业对接', '创新孵化'] },
     ],
     impacts: [
       { title: '技术创新', value: '8+', description: '核心技术模块', details: '人文艺术、互动体验、网络技术、图形学、动作捕捉、人工智能、数字资产、虚拟现实' },
@@ -182,6 +183,7 @@ const pageContent = {
         author: '2024 International Symposium on Ecological Design Engineering, Artificial Intelligence, and Sustainable Development',
         publisher: '2024ISEDEAISD (Ei Compendex)',
         type: '國際會議論文',
+        link: 'https://ieeexplore.ieee.org/document/11607407',
         description: '研究沉浸式智能虛擬環境和數字化身在增強學生歸屬感方面的作用，為數字教育提供理論支撐。',
         keywords: ['虛擬環境', '數字化身', '教育技術', '歸屬感'],
       },
@@ -217,7 +219,7 @@ const pageContent = {
       { location: '北京師範大學未來設計美術館', region: '珠海', status: '合作中', description: '與高等院校合作，開展數字藝術教育和學術研究', features: ['學術研究', '教育實踐', '展覽展示'] },
       { location: '798深瀾AI中心', region: '北京', status: '合作中', description: '在北京藝術區設立展示中心，推廣數字藝術創作理念', features: ['藝術展示', '技術交流', '文化推廣'] },
       { location: '香港科技大學霍英東研究院', region: '廣州', status: '合作中', description: '與香港科技大學合作，推動科技創新與人才培養', features: ['科研合作', '技術轉化', '人才交流'] },
-      { location: '中關村AI北緯社區', region: '北京', status: '合作中', description: '在中關村AI核心區域設立合作基地，推動人工智能技術應用', features: ['AI技術', '產業對接', '創新孵化'] },
+      { location: '中關村AI北緯社區（OPC）', region: '北京', status: '合作中', description: '在中關村AI核心區域設立合作基地，推動人工智能技術應用', features: ['AI技術', '產業對接', '創新孵化'] },
     ],
     impacts: [
       { title: '技術創新', value: '8+', description: '核心技術模塊', details: '人文藝術、互動體驗、網絡技術、圖形學、動作捕捉、人工智能、數字資產、虛擬現實' },
@@ -294,6 +296,7 @@ const pageContent = {
         author: '2024 International Symposium on Ecological Design Engineering, Artificial Intelligence, and Sustainable Development',
         publisher: '2024ISEDEAISD (Ei Compendex)',
         type: 'International Conference Paper',
+        link: 'https://ieeexplore.ieee.org/document/11607407',
         description: 'Studies the role of immersive intelligent virtual environments and digital avatars in enhancing students\' sense of belonging, providing theoretical support for digital education.',
         keywords: ['Virtual Environment', 'Digital Avatar', 'Educational Technology', 'Sense of Belonging'],
       },
@@ -329,7 +332,7 @@ const pageContent = {
       { location: 'BNU Future Design Art Museum', region: 'Zhuhai', status: 'Partnering', description: 'Collaborating with higher education for digital art education and academic research', features: ['Academic Research', 'Educational Practice', 'Exhibition'] },
       { location: '798 Shenlan AI Center', region: 'Beijing', status: 'Partnering', description: 'Exhibition center in Beijing art district promoting digital art creation concepts', features: ['Art Exhibition', 'Tech Exchange', 'Cultural Promotion'] },
       { location: 'HKUST Fok Ying Tung Research Institute', region: 'Guangzhou', status: 'Partnering', description: 'Partnering with HKUST to advance tech innovation and talent cultivation', features: ['Research Collaboration', 'Tech Transfer', 'Talent Exchange'] },
-      { location: 'Zhongguancun AI Latitude Community', region: 'Beijing', status: 'Partnering', description: 'Cooperation base in Zhongguancun AI core area to advance AI technology application', features: ['AI Technology', 'Industry Matching', 'Innovation Incubation'] },
+      { location: 'Zhongguancun AI Latitude Community (OPC)', region: 'Beijing', status: 'Partnering', description: 'Cooperation base in Zhongguancun AI core area to advance AI technology application', features: ['AI Technology', 'Industry Matching', 'Innovation Incubation'] },
     ],
     impacts: [
       { title: 'Tech Innovation', value: '8+', description: 'Core Tech Modules', details: 'Humanities & Arts, Interactive Experience, Network Technology, Graphics, Motion Capture, AI, Digital Assets, Virtual Reality' },
@@ -470,7 +473,7 @@ const ResearchPage = () => {
                   <p className="text-gray-300 mb-4">{paper.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {paper.keywords.map((keyword, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-xs bg-slate-700 text-gray-300">
+                      <Badge key={idx} variant="secondary" className="text-xs" style={{ background: 'var(--bg-elevated)', color: 'var(--text-secondary)' }}>
                         {keyword}
                       </Badge>
                     ))}
@@ -593,7 +596,7 @@ const ResearchPage = () => {
                   <p className="text-gray-300 mb-4">{app.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {app.features.map((feature, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-xs bg-slate-700 text-gray-300">
+                      <Badge key={idx} variant="secondary" className="text-xs" style={{ background: 'var(--bg-elevated)', color: 'var(--text-secondary)' }}>
                         {feature}
                       </Badge>
                     ))}

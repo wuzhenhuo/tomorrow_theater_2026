@@ -19,6 +19,7 @@ import dancer8 from '../assets/images/dancer8.JPG';
 import dancer9 from '../assets/images/dancer9.png';
 import tomorrowtheater01 from '../assets/images/tomorrowtheater01.png';
 import tomorrowtheater02 from '../assets/images/tomorrowtheater02.png';
+import poster from '../assets/images/poster.png';
 
 const pageContent = {
   'zh-CN': {
@@ -71,7 +72,7 @@ const pageContent = {
       '北京师范大学未来设计美术馆（珠海）',
       '澳门科技大学人文艺术学院',
       '香港科技大学霍英东研究院',
-      '中关村AI北纬社区',
+      '中关村AI北纬社区（OPC）',
     ],
     ctaTitle: '开启您的数字艺术之旅',
     ctaDesc: '加入明日剧场，探索 AIGC 与元宇宙的无限可能',
@@ -86,6 +87,19 @@ const pageContent = {
     awardsLabel: 'AWARDS — 获奖成果',
     partnersLabel: 'PARTNERS — 合作机构',
     ctaLabel: 'GET STARTED',
+    newsLabel: 'NEWS — 新闻动态',
+    newsTitle: '新闻动态',
+    newsDesc: '关注明日剧场的最新合作与活动进展',
+    newsItems: [
+      {
+        date: '2026年底',
+        text: '《数字舞蹈：创作、技术与应用——新媒体、人工智能与具身智能》入选十五五规划教材，将于2026年底由中国纺织出版社出版。',
+      },
+      {
+        date: '2026年10月',
+        text: '明日剧场团队与沙特国王大学共同举办线上工作坊，吴振博士和马明博士主持。',
+      },
+    ],
   },
   'zh-TW': {
     badge: '國內首個元宇宙虛擬劇場',
@@ -137,7 +151,7 @@ const pageContent = {
       '北京師範大學未來設計美術館（珠海）',
       '澳門科技大學人文藝術學院',
       '香港科技大學霍英東研究院',
-      '中關村AI北緯社區',
+      '中關村AI北緯社區（OPC）',
     ],
     ctaTitle: '開啟您的數字藝術之旅',
     ctaDesc: '加入明日劇場，探索 AIGC 與元宇宙的無限可能',
@@ -152,6 +166,19 @@ const pageContent = {
     awardsLabel: 'AWARDS — 獲獎成果',
     partnersLabel: 'PARTNERS — 合作機構',
     ctaLabel: 'GET STARTED',
+    newsLabel: 'NEWS — 新聞動態',
+    newsTitle: '新聞動態',
+    newsDesc: '關注明日劇場的最新合作與活動進展',
+    newsItems: [
+      {
+        date: '2026年底',
+        text: '《數字舞蹈：創作、技術與應用——新媒體、人工智能與具身智能》入選十五五規劃教材，將於2026年底由中國紡織出版社出版。',
+      },
+      {
+        date: '2026年10月',
+        text: '明日劇場團隊與沙特國王大學共同舉辦線上工作坊，吳振博士和馬明博士主持。',
+      },
+    ],
   },
   en: {
     badge: "China's First Metaverse Virtual Theater",
@@ -203,7 +230,7 @@ const pageContent = {
       'BNU Future Design Art Museum (Zhuhai)',
       'Macao University of Science and Technology, Faculty of Humanities and Arts',
       'HKUST Fok Ying Tung Research Institute',
-      'Zhongguancun AI Latitude Community',
+      'Zhongguancun AI Latitude Community (OPC)',
     ],
     ctaTitle: 'Start Your Digital Art Journey',
     ctaDesc: 'Join Theater of Tomorrow — explore the infinite possibilities of AIGC and Metaverse',
@@ -218,6 +245,19 @@ const pageContent = {
     awardsLabel: 'AWARDS — RECOGNITION',
     partnersLabel: 'PARTNERS — INSTITUTIONS',
     ctaLabel: 'GET STARTED',
+    newsLabel: 'NEWS — LATEST UPDATES',
+    newsTitle: 'Latest News',
+    newsDesc: "Follow Theater of Tomorrow's latest partnerships and events",
+    newsItems: [
+      {
+        date: 'Late 2026',
+        text: '"Digital Dance: Creation, Technology and Application — New Media, Artificial Intelligence and Embodied Intelligence" has been selected as a 15th Five-Year Plan textbook and will be published by China Textile & Apparel Press by the end of 2026.',
+      },
+      {
+        date: 'October 2026',
+        text: 'The Theater of Tomorrow team and King Saud University jointly held an online workshop, hosted by Dr. Wu Zhen and Dr. Ma Ming.',
+      },
+    ],
   },
 };
 
@@ -399,6 +439,54 @@ const HomePage = () => {
                 </div>
               </React.Fragment>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="divider" />
+
+      {/* ════ NEWS ════ */}
+      <section className="section">
+        <div className="container">
+          <ScrollReveal>
+            <div className="section-header">
+              <SLabel>{c.newsLabel}</SLabel>
+              <h2 className="text-heading" style={{ fontSize: 'clamp(22px, 3vw, 32px)', marginBottom: 10 }}>{c.newsTitle}</h2>
+              <p className="text-body" style={{ fontSize: 14, maxWidth: 480 }}>{c.newsDesc}</p>
+            </div>
+          </ScrollReveal>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '260px 1fr', gap: 32, alignItems: 'start' }} className="news-grid">
+            <ScrollReveal>
+              <img
+                src={poster}
+                alt="poster"
+                style={{
+                  width: '100%', height: 'auto', display: 'block',
+                  borderRadius: 'var(--radius-lg)',
+                  border: '1px solid var(--border)',
+                  boxShadow: 'var(--shadow-card)',
+                }}
+              />
+            </ScrollReveal>
+            <div style={{ border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
+              {c.newsItems.map((item, i) => (
+                <ScrollReveal key={i} delay={i * 0.08}>
+                  <div style={{
+                    display: 'flex', alignItems: 'flex-start', gap: 14,
+                    padding: '20px 22px',
+                    borderBottom: i < c.newsItems.length - 1 ? '1px solid var(--border)' : 'none',
+                    backgroundColor: 'var(--bg-card)',
+                  }}>
+                    <div style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--accent)', flexShrink: 0, marginTop: 7 }} />
+                    <div>
+                      <div className="text-label" style={{ marginBottom: 8, color: 'var(--accent)' }}>{item.date}</div>
+                      <p style={{ margin: 0, fontSize: 14, color: 'var(--text-primary)', lineHeight: 1.7 }}>{item.text}</p>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>

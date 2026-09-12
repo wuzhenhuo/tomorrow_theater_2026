@@ -55,7 +55,7 @@ const pageContent = {
       { name: '珠海学术中心', address: '北京师范大学未来设计美术馆', description: '学术研究和教育合作基地', status: '学术合作' },
       { name: '北京展示中心', address: '798深澜AI中心', description: '技术展示和文化推广中心', status: '展示中心' },
       { name: '广州科研中心', address: '香港科技大学霍英东研究院', description: '科技创新与人才培养合作基地', status: '科研合作' },
-      { name: '北京AI创新中心', address: '中关村AI北纬社区', description: '人工智能技术应用与产业对接中心', status: '创新合作' },
+      { name: '北京AI创新中心', address: '中关村AI北纬社区（OPC）', description: '人工智能技术应用与产业对接中心', status: '创新合作' },
     ],
     cooperationTypes: [
       { title: '教育合作', description: '与学校、培训机构合作开展数字艺术教育', features: ['课程开发', '师资培训', '学生交流', '设备支持'] },
@@ -109,7 +109,7 @@ const pageContent = {
       { name: '珠海學術中心', address: '北京師範大學未來設計美術館', description: '學術研究和教育合作基地', status: '學術合作' },
       { name: '北京展示中心', address: '798深瀾AI中心', description: '技術展示和文化推廣中心', status: '展示中心' },
       { name: '廣州科研中心', address: '香港科技大學霍英東研究院', description: '科技創新與人才培養合作基地', status: '科研合作' },
-      { name: '北京AI創新中心', address: '中關村AI北緯社區', description: '人工智能技術應用與產業對接中心', status: '創新合作' },
+      { name: '北京AI創新中心', address: '中關村AI北緯社區（OPC）', description: '人工智能技術應用與產業對接中心', status: '創新合作' },
     ],
     cooperationTypes: [
       { title: '教育合作', description: '與學校、培訓機構合作開展數字藝術教育', features: ['課程開發', '師資培訓', '學生交流', '設備支持'] },
@@ -163,7 +163,7 @@ const pageContent = {
       { name: 'Zhuhai Academic Center', address: 'BNU Future Design Art Museum', description: 'Academic research and education cooperation base', status: 'Academic Partner' },
       { name: 'Beijing Exhibition Center', address: '798 Shenlan AI Center', description: 'Technology exhibition and cultural promotion center', status: 'Exhibition Center' },
       { name: 'Guangzhou Research Center', address: 'HKUST Fok Ying Tung Research Institute', description: 'Tech innovation and talent cultivation cooperation base', status: 'Research Partner' },
-      { name: 'Beijing AI Innovation Center', address: 'Zhongguancun AI Latitude Community', description: 'AI technology application and industry matching center', status: 'Innovation Partner' },
+      { name: 'Beijing AI Innovation Center', address: 'Zhongguancun AI Latitude Community (OPC)', description: 'AI technology application and industry matching center', status: 'Innovation Partner' },
     ],
     cooperationTypes: [
       { title: 'Educational Cooperation', description: 'Collaborating with schools and training institutions on digital art education', features: ['Curriculum Development', 'Faculty Training', 'Student Exchange', 'Equipment Support'] },
