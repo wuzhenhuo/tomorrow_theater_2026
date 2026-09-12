@@ -77,7 +77,7 @@ tomorrow-theater/
 - 聚能湾国家级科技企业孵化中心（上海）
 - 北京师范大学未来设计美术馆（珠海）
 - 香港科技大学霍英东研究院
-- 中关村AI北纬社区
+- 中关村AI北纬社区（OPC）
 
 ## 获奖情况
 
@@ -102,7 +102,20 @@ tomorrow-theater/
    [查看论文](https://kns.cnki.net/kcms2/article/abstract?v=h5hbu4VP4UTPji-zdsXjMQEIEZNm-VxBeX7GYWbJCbkzF0NZS8DhGITHIbNUq9Wn0oEhOoijvcYm7OtI7ROEKXcuYL-XtLT_6CeAkqZdGfNJYFM4Ro-JXME2hWc5vkbvkqPKsVuvvh5huiDrAWswv-r2uXMn2O1cUTJZFChUtXE=&uniplatform=NZKPT)
 
 3. **A Study of The Role of Immersive Intelligent Virtual Environments and Digital Avatars in Enhancing Students' Sense of Belonging**  
-   2024 International Symposium on Ecological Design Engineering, Artificial Intelligence, and Sustainable Development (Ei Compendex)
+   2024 International Symposium on Ecological Design Engineering, Artificial Intelligence, and Sustainable Development (Ei Compendex)  
+   [查看论文](https://ieeexplore.ieee.org/document/11607407)
+
+## 新闻动态
+
+- **2026年10月** — 明日剧场团队与沙特国王大学共同举办线上工作坊，吴振博士和马明博士主持。
+- **2026年底** — 《数字舞蹈：创作、技术与应用——新媒体、人工智能与具身智能》入选十五五规划教材，将由中国纺织出版社出版。
+
+## 更新日志
+
+- 修复浅色模式下文字对比度问题（资源中心页未选中标签、研究论文关键词标签）
+- 首页新增「新闻动态」板块，展示 poster.png 及最新合作/出版动态
+- 合作机构「中关村AI北纬社区」统一标注（OPC）
+- 研究论文页新增 IEEE Xplore 论文链接
 
 ## 联系方式
 
