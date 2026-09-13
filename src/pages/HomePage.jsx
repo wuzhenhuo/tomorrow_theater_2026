@@ -32,6 +32,8 @@ const pageContent = {
     heroUpgradeItems: ['全新 AI 知识库学习系统', '全新舞蹈数据库系统', '全新 AI 编舞系统'],
     tryPlatform: '新版本预约',
     downloadAndroid: '下载移动版（安卓）',
+    downloadHistory: '历史版本下载',
+    downloadKinect: '交互系统下载-Azure Kinect',
     stats: [
       { value: '9+', label: '国际奖项' },
       { value: '6+', label: '合作机构' },
@@ -116,6 +118,8 @@ const pageContent = {
     heroUpgradeItems: ['全新 AI 知識庫學習系統', '全新舞蹈資料庫系統', '全新 AI 編舞系統'],
     tryPlatform: '新版本預約',
     downloadAndroid: '下載行動版（安卓）',
+    downloadHistory: '歷史版本下載',
+    downloadKinect: '交互系統下載-Azure Kinect',
     stats: [
       { value: '9+', label: '國際獎項' },
       { value: '6+', label: '合作機構' },
@@ -200,6 +204,8 @@ const pageContent = {
     heroUpgradeItems: ['New AI Knowledge Base Learning System', 'New Dance Database System', 'New AI Choreography System'],
     tryPlatform: 'Join Waitlist',
     downloadAndroid: 'Download (Android)',
+    downloadHistory: 'Download Previous Versions',
+    downloadKinect: 'Interaction System Download - Azure Kinect',
     stats: [
       { value: '9+', label: 'International Awards' },
       { value: '6+', label: 'Partner Institutions' },
@@ -436,8 +442,14 @@ const HomePage = () => {
             <button className="btn btn-primary" onClick={openWaitlist}>
               <Play size={14} /> {c.tryPlatform}
             </button>
+            <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/1uxI4RKU8F-E4AmiVhfNtKqat2q9JnY91/view?usp=drive_link', '_blank')}>
+              <ArrowRight size={14} /> {c.downloadHistory}
+            </button>
             <button className="btn btn-secondary" onClick={() => window.open('https://addressable-9gza33lieadc81da-1253337800.tcloudbaseapp.com/TOT/android/TOT_v1.3.0.apk', '_blank')}>
               <ArrowRight size={14} /> {c.downloadAndroid}
+            </button>
+            <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/1UdnmmfxlIOmkLwtLyHIvyEzv95besYUa/view?usp=drive_link', '_blank')}>
+              <ArrowRight size={14} /> {c.downloadKinect}
             </button>
           </div>
 
