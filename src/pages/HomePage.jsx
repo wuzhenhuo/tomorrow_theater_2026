@@ -34,6 +34,8 @@ const pageContent = {
     downloadAndroid: '下载移动版（安卓）',
     downloadHistory: '历史版本下载',
     downloadKinect: '交互系统下载-Azure Kinect',
+    downloadMocopi: '交互系统下载-Mocopi',
+    downloadNote: '如需 Noitom 惯性动捕和青瞳光学动捕的交互系统，请与团队联系',
     stats: [
       { value: '9+', label: '国际奖项' },
       { value: '6+', label: '合作机构' },
@@ -120,6 +122,8 @@ const pageContent = {
     downloadAndroid: '下載行動版（安卓）',
     downloadHistory: '歷史版本下載',
     downloadKinect: '交互系統下載-Azure Kinect',
+    downloadMocopi: '交互系統下載-Mocopi',
+    downloadNote: '如需 Noitom 慣性動捕和青瞳光學動捕的交互系統，請與團隊聯繫',
     stats: [
       { value: '9+', label: '國際獎項' },
       { value: '6+', label: '合作機構' },
@@ -206,6 +210,8 @@ const pageContent = {
     downloadAndroid: 'Download (Android)',
     downloadHistory: 'Download Previous Versions',
     downloadKinect: 'Interaction System Download - Azure Kinect',
+    downloadMocopi: 'Interaction System Download - Mocopi',
+    downloadNote: 'For Noitom inertial motion capture and Qingtong optical motion capture interaction systems, please contact our team',
     stats: [
       { value: '9+', label: 'International Awards' },
       { value: '6+', label: 'Partner Institutions' },
@@ -438,7 +444,7 @@ const HomePage = () => {
           </div>
 
           {/* CTAs */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginBottom: 72 }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginBottom: 16 }}>
             <button className="btn btn-primary" onClick={openWaitlist}>
               <Play size={14} /> {c.tryPlatform}
             </button>
@@ -451,7 +457,13 @@ const HomePage = () => {
             <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/1UdnmmfxlIOmkLwtLyHIvyEzv95besYUa/view?usp=drive_link', '_blank')}>
               <ArrowRight size={14} /> {c.downloadKinect}
             </button>
+            <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/16dtSM_a1GKOUy55wj6laAwUsGfA3Bpoq/view?usp=drive_link', '_blank')}>
+              <ArrowRight size={14} /> {c.downloadMocopi}
+            </button>
           </div>
+          <p style={{ color: 'var(--text-muted-vis)', fontSize: 13, margin: '0 0 56px 0' }}>
+            {c.downloadNote} <Link to="/contact" style={{ color: 'var(--accent)' }}>{c.contactConsult}</Link>
+          </p>
 
           {/* Stats */}
           <div style={{ display: 'flex', gap: 0, flexWrap: 'wrap' }}>
