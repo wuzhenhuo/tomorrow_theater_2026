@@ -127,6 +127,9 @@ tomorrow-theater/
 - 首页新增「历史版本下载」按钮
 - 首页新增「交互系统下载-Azure Kinect」按钮
 - 首页新增「交互系统下载-Mocopi」按钮，并附 Noitom 惯性动捕、青瞳光学动捕交互系统的团队联系提示
+- 首页下载说明补充历史版本（Windows）、移动版本（Android）及交互系统硬件连接的使用说明
+- 首页新增「交互系统下载-Noitom」「交互系统下载-青瞳(Chingmu)」按钮
+- 资源中心页「立即下载体验」板块同步历史版本下载、Azure Kinect / Mocopi / Noitom / 青瞳(Chingmu) 交互系统下载按钮及联系咨询说明
 
 ## 联系方式
 
