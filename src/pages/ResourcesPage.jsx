@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useWaitlist } from '../context/WaitlistContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -76,8 +77,15 @@ const pageContent = {
     visitTool: '访问工具',
     downloadTitle: '立即下载体验',
     downloadDesc: '开始您的虚拟表演之旅，探索数字艺术的无限可能',
+    downloadNote: '历史版本支持在 Windows 系统上运行；移动版本可安装于 Android 手机及平板设备；交互系统可与相应的动作捕捉硬件连接，实现数据采集与实时交互。如需其他动作捕捉设备的交互系统，请与团队联系',
+    contactConsult: '联系咨询',
     pcVersion: '电脑版体验',
     androidVersion: '下载移动版（安卓系统）',
+    downloadHistory: '历史版本下载',
+    downloadKinect: '交互系统下载-Azure Kinect',
+    downloadMocopi: '交互系统下载-Mocopi',
+    downloadNoitom: '交互系统下载-Noitom',
+    downloadChingmu: '交互系统下载-青瞳(Chingmu)',
     characters: [
       { name: '电视机人', description: '可与摄像头互动，支持自定义颜色', features: ['摄像头互动', '自定义颜色', '实时面部捕捉'] },
       { name: '宇航员', description: '男、女角色可选', features: ['科幻风格', '性别选择', '太空主题'] },
@@ -238,8 +246,15 @@ const pageContent = {
     visitTool: '訪問工具',
     downloadTitle: '立即下載體驗',
     downloadDesc: '開始您的虛擬表演之旅，探索數字藝術的無限可能',
+    downloadNote: '歷史版本支持在 Windows 系統上運行；移動版本可安裝於 Android 手機及平板設備；交互系統可與相應的動作捕捉硬件連接，實現數據採集與實時交互。如需其他動作捕捉設備的交互系統，請與團隊聯繫',
+    contactConsult: '聯繫咨詢',
     pcVersion: '電腦版體驗',
     androidVersion: '下載行動版（安卓系統）',
+    downloadHistory: '歷史版本下載',
+    downloadKinect: '交互系統下載-Azure Kinect',
+    downloadMocopi: '交互系統下載-Mocopi',
+    downloadNoitom: '交互系統下載-Noitom',
+    downloadChingmu: '交互系統下載-青瞳(Chingmu)',
     characters: [
       { name: '電視機人', description: '可與攝像頭互動，支持自定義顏色', features: ['攝像頭互動', '自定義顏色', '實時面部捕捉'] },
       { name: '宇航員', description: '男、女角色可選', features: ['科幻風格', '性別選擇', '太空主題'] },
@@ -400,8 +415,15 @@ const pageContent = {
     visitTool: 'Visit Tool',
     downloadTitle: 'Download & Experience Now',
     downloadDesc: 'Start your virtual performance journey and explore the infinite possibilities of digital art',
+    downloadNote: 'The legacy version runs on Windows; the mobile version can be installed on Android phones and tablets; the interaction system connects to the corresponding motion capture hardware for data acquisition and real-time interaction. For interaction systems with other motion capture devices, please contact our team',
+    contactConsult: 'Contact Us',
     pcVersion: 'PC Version',
     androidVersion: 'Download Mobile (Android)',
+    downloadHistory: 'Download Previous Versions',
+    downloadKinect: 'Interaction System Download - Azure Kinect',
+    downloadMocopi: 'Interaction System Download - Mocopi',
+    downloadNoitom: 'Interaction System Download - Noitom',
+    downloadChingmu: 'Interaction System Download - Chingmu',
     characters: [
       { name: 'TV Head Character', description: 'Camera-interactive, supports custom colors', features: ['Camera Interaction', 'Custom Colors', 'Real-time Face Capture'] },
       { name: 'Astronaut', description: 'Male and female options available', features: ['Sci-Fi Style', 'Gender Selection', 'Space Theme'] },
@@ -1399,8 +1421,11 @@ const ResourcesPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               {c.downloadTitle}
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-gray-300 mb-4">
               {c.downloadDesc}
+            </p>
+            <p className="text-sm text-gray-400 mb-8">
+              {c.downloadNote} <Link to="/contact" className="text-cyan-400 hover:underline">{c.contactConsult}</Link>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -1419,6 +1444,53 @@ const ResourcesPage = () => {
               >
                 <Smartphone className="w-5 h-5 mr-2" />
                 {c.androidVersion}
+              </Button>
+            </div>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center mt-4">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-3"
+                onClick={() => window.open('https://drive.google.com/file/d/1uxI4RKU8F-E4AmiVhfNtKqat2q9JnY91/view?usp=drive_link', '_blank')}
+              >
+                <Download className="w-5 h-5 mr-2" />
+                {c.downloadHistory}
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-3"
+                onClick={() => window.open('https://drive.google.com/file/d/1UdnmmfxlIOmkLwtLyHIvyEzv95besYUa/view?usp=drive_link', '_blank')}
+              >
+                <Download className="w-5 h-5 mr-2" />
+                {c.downloadKinect}
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-3"
+                onClick={() => window.open('https://drive.google.com/file/d/16dtSM_a1GKOUy55wj6laAwUsGfA3Bpoq/view?usp=drive_link', '_blank')}
+              >
+                <Download className="w-5 h-5 mr-2" />
+                {c.downloadMocopi}
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-3"
+                onClick={() => window.open('https://drive.google.com/file/d/1SHQaCGb6UjYAOnG6F7futIkcHOu3L1TV/view?usp=sharing', '_blank')}
+              >
+                <Download className="w-5 h-5 mr-2" />
+                {c.downloadNoitom}
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-3"
+                onClick={() => window.open('https://drive.google.com/file/d/1JAxzJ9TxcoaeNknvwxYvXnpDaAR1i7H4/view?usp=drive_link', '_blank')}
+              >
+                <Download className="w-5 h-5 mr-2" />
+                {c.downloadChingmu}
               </Button>
             </div>
           </div>

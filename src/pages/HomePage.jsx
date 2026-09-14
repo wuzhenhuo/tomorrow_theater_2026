@@ -35,7 +35,9 @@ const pageContent = {
     downloadHistory: '历史版本下载',
     downloadKinect: '交互系统下载-Azure Kinect',
     downloadMocopi: '交互系统下载-Mocopi',
-    downloadNote: '如需 Noitom 惯性动捕和青瞳光学动捕的交互系统，请与团队联系',
+    downloadNoitom: '交互系统下载-Noitom',
+    downloadChingmu: '交互系统下载-青瞳(Chingmu)',
+    downloadNote: '历史版本支持在 Windows 系统上运行；移动版本可安装于 Android 手机及平板设备；交互系统可与相应的动作捕捉硬件连接，实现数据采集与实时交互。如需其他动作捕捉设备的交互系统，请与团队联系',
     stats: [
       { value: '9+', label: '国际奖项' },
       { value: '6+', label: '合作机构' },
@@ -123,7 +125,9 @@ const pageContent = {
     downloadHistory: '歷史版本下載',
     downloadKinect: '交互系統下載-Azure Kinect',
     downloadMocopi: '交互系統下載-Mocopi',
-    downloadNote: '如需 Noitom 慣性動捕和青瞳光學動捕的交互系統，請與團隊聯繫',
+    downloadNoitom: '交互系統下載-Noitom',
+    downloadChingmu: '交互系統下載-青瞳(Chingmu)',
+    downloadNote: '歷史版本支持在 Windows 系統上運行；移動版本可安裝於 Android 手機及平板設備；交互系統可與相應的動作捕捉硬件連接，實現數據採集與實時交互。如需其他動作捕捉設備的交互系統，請與團隊聯繫',
     stats: [
       { value: '9+', label: '國際獎項' },
       { value: '6+', label: '合作機構' },
@@ -211,7 +215,9 @@ const pageContent = {
     downloadHistory: 'Download Previous Versions',
     downloadKinect: 'Interaction System Download - Azure Kinect',
     downloadMocopi: 'Interaction System Download - Mocopi',
-    downloadNote: 'For Noitom inertial motion capture and Qingtong optical motion capture interaction systems, please contact our team',
+    downloadNoitom: 'Interaction System Download - Noitom',
+    downloadChingmu: 'Interaction System Download - Chingmu',
+    downloadNote: 'The legacy version runs on Windows; the mobile version can be installed on Android phones and tablets; the interaction system connects to the corresponding motion capture hardware for data acquisition and real-time interaction. For interaction systems with other motion capture devices, please contact our team',
     stats: [
       { value: '9+', label: 'International Awards' },
       { value: '6+', label: 'Partner Institutions' },
@@ -459,6 +465,12 @@ const HomePage = () => {
             </button>
             <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/16dtSM_a1GKOUy55wj6laAwUsGfA3Bpoq/view?usp=drive_link', '_blank')}>
               <ArrowRight size={14} /> {c.downloadMocopi}
+            </button>
+            <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/1SHQaCGb6UjYAOnG6F7futIkcHOu3L1TV/view?usp=sharing', '_blank')}>
+              <ArrowRight size={14} /> {c.downloadNoitom}
+            </button>
+            <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/1JAxzJ9TxcoaeNknvwxYvXnpDaAR1i7H4/view?usp=drive_link', '_blank')}>
+              <ArrowRight size={14} /> {c.downloadChingmu}
             </button>
           </div>
           <p style={{ color: 'var(--text-muted-vis)', fontSize: 13, margin: '0 0 56px 0' }}>
