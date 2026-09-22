@@ -51,7 +51,6 @@ const pageContent = {
       { name: '马明（澳门）', role: 'CMO', description: '澳门城市大学教授', image: '/team/ming.png' },
       { name: '欧阳嘉玲（澳门）', role: '项目策划', description: '澳门国际青年智库秘书长，负责项目整体策划与协调。', image: '/team/jialing.png' },
       { name: '樊一鸣（澳大利亚）', role: '市场总监', description: '视觉艺术家，澳门大学与墨尔本大学双硕士，海外市场推广与品牌建设', image: '/team/fanyiming.png' },
-      { name: '王莹', role: '设计总监', description: '北京师范大学（珠海）硕士，负责视觉设计与用户体验。', image: '/team/wangyin.png' },
     ],
     artAdvisors: [
       { name: 'Tony Brown', role: '艺术顾问', description: '法国巴黎国立高等美院终身教授', image: '/team/tony.png' },
@@ -109,7 +108,6 @@ const pageContent = {
       { name: '馬明（澳門）', role: 'CMO', description: '澳門城市大學教授', image: '/team/ming.png' },
       { name: '歐陽嘉玲（澳門）', role: '項目策劃', description: '澳門國際青年智庫秘書長，負責項目整體策劃與協調。', image: '/team/jialing.png' },
       { name: '樊一鳴（澳大利亞）', role: '市場總監', description: '視覺藝術家，澳門大學與墨爾本大學雙碩士，海外市場推廣與品牌建設', image: '/team/fanyiming.png' },
-      { name: '王瑩', role: '設計總監', description: '北京師範大學（珠海）碩士，負責視覺設計與用戶體驗。', image: '/team/wangyin.png' },
     ],
     artAdvisors: [
       { name: 'Tony Brown', role: '藝術顧問', description: '法國巴黎國立高等美院終身教授', image: '/team/tony.png' },
@@ -167,7 +165,6 @@ const pageContent = {
       { name: 'Ma Ming (Macao)', role: 'CMO', description: 'Professor at City University of Macau', image: '/team/ming.png' },
       { name: 'Ouyang Jialing (Macao)', role: 'Project Planner', description: 'Secretary-General of Macao International Youth Think Tank, responsible for overall project planning and coordination.', image: '/team/jialing.png' },
       { name: 'Fan Yiming (Australia)', role: 'Marketing Director', description: 'Visual artist, dual Master\'s from University of Macao and University of Melbourne, overseas marketing and brand building', image: '/team/fanyiming.png' },
-      { name: 'Wang Ying', role: 'Design Director', description: 'Master from Beijing Normal University (Zhuhai), responsible for visual design and user experience.', image: '/team/wangyin.png' },
     ],
     artAdvisors: [
       { name: 'Tony Brown', role: 'Art Advisor', description: 'Tenured Professor at École nationale supérieure des Beaux-Arts de Paris', image: '/team/tony.png' },
