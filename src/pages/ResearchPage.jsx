@@ -48,6 +48,15 @@ const pageContent = {
     techInnovationDesc: '联合研发新技术、申请专利和成果转化',
     papers: [
       {
+        title: 'From Body to Data: Digital Intermediaries and the Translation of Intangible Cultural Heritage Reba Dance',
+        author: 'Ma, M., Chen, X., Wu, Z. (2026)',
+        publisher: 'DH 2026, Daejeon, July 27–31',
+        type: '国际会议论文',
+        link: 'https://dh-daejeon.vercel.app/abs/165?q=Reba+Dance&full=1',
+        description: '以热巴舞为例，探讨数字中介如何将非物质文化遗产舞蹈从身体经验转译为数据，研究数字技术在非遗传承中的作用。',
+        keywords: ['数字人文', '非物质文化遗产', '热巴舞', '数字中介'],
+      },
+      {
         title: 'Theatre of Tomorrow - A Virtual Exhibition and Performing Arts Platform Created by Digital Game Technology',
         author: 'Wu, Z. (2023)',
         publisher: 'Singapore, Springer Nature Singapore',
@@ -159,6 +168,15 @@ const pageContent = {
     techInnovationDesc: '聯合研發新技術、申請專利和成果轉化',
     papers: [
       {
+        title: 'From Body to Data: Digital Intermediaries and the Translation of Intangible Cultural Heritage Reba Dance',
+        author: 'Ma, M., Chen, X., Wu, Z. (2026)',
+        publisher: 'DH 2026, Daejeon, July 27–31',
+        type: '國際會議論文',
+        link: 'https://dh-daejeon.vercel.app/abs/165?q=Reba+Dance&full=1',
+        description: '以熱巴舞為例，探討數字中介如何將非物質文化遺產舞蹈從身體經驗轉譯為數據，研究數字技術在非遺傳承中的作用。',
+        keywords: ['數字人文', '非物質文化遺產', '熱巴舞', '數字中介'],
+      },
+      {
         title: 'Theatre of Tomorrow - A Virtual Exhibition and Performing Arts Platform Created by Digital Game Technology',
         author: 'Wu, Z. (2023)',
         publisher: 'Singapore, Springer Nature Singapore',
@@ -269,6 +287,15 @@ const pageContent = {
     techInnovation: 'Tech Innovation',
     techInnovationDesc: 'Joint R&D, patent applications, and technology transfer',
     papers: [
+      {
+        title: 'From Body to Data: Digital Intermediaries and the Translation of Intangible Cultural Heritage Reba Dance',
+        author: 'Ma, M., Chen, X., Wu, Z. (2026)',
+        publisher: 'DH 2026, Daejeon, July 27–31',
+        type: 'International Conference Paper',
+        link: 'https://dh-daejeon.vercel.app/abs/165?q=Reba+Dance&full=1',
+        description: 'Taking Reba dance as a case study, explores how digital intermediaries translate intangible cultural heritage dance from embodied experience into data, examining the role of digital technology in heritage transmission.',
+        keywords: ['Digital Humanities', 'Intangible Cultural Heritage', 'Reba Dance', 'Digital Intermediaries'],
+      },
       {
         title: 'Theatre of Tomorrow - A Virtual Exhibition and Performing Arts Platform Created by Digital Game Technology',
         author: 'Wu, Z. (2023)',
