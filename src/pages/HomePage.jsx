@@ -20,6 +20,9 @@ import dancer9 from '../assets/images/dancer9.png';
 import tomorrowtheater01 from '../assets/images/tomorrowtheater01.png';
 import tomorrowtheater02 from '../assets/images/tomorrowtheater02.png';
 import poster from '../assets/images/poster.png';
+import kingSaud from '../assets/KingSaud.png';
+import kingSaudVideo from '../assets/KingSaud.mp4';
+import dexianyincha from '../assets/dexianyincha.JPG';
 
 const pageContent = {
   'zh-CN': {
@@ -102,8 +105,16 @@ const pageContent = {
         text: '《数字舞蹈：创作、技术与应用——新媒体、人工智能与具身智能》入选十五五规划教材，将于2026年底由中国纺织出版社出版。',
       },
       {
-        date: '2026年10月',
-        text: '明日剧场团队与沙特国王大学共同举办线上工作坊，吴振博士和马明博士主持。',
+        date: '2026年11月1日',
+        text: '吴振博士受邀担任2026年国家艺术基金澳门街舞舞剧“得闲饮茶”多媒体设计，11月1日开始巡演。',
+        image: dexianyincha,
+      },
+      {
+        date: '2026年10月17日',
+        text: '明日剧场团队受邀参加沙特国王大学共同举办线上工作坊，吴振博士与马明博士发言。',
+        link: 'https://www.linkedin.com/feed/update/urn:li:activity:7516969655568166912/',
+        image: kingSaud,
+        video: kingSaudVideo,
       },
       {
         date: '2026年7月21日',
@@ -192,8 +203,16 @@ const pageContent = {
         text: '《數字舞蹈：創作、技術與應用——新媒體、人工智能與具身智能》入選十五五規劃教材，將於2026年底由中國紡織出版社出版。',
       },
       {
-        date: '2026年10月',
-        text: '明日劇場團隊與沙特國王大學共同舉辦線上工作坊，吳振博士和馬明博士主持。',
+        date: '2026年11月1日',
+        text: '吳振博士受邀擔任2026年國家藝術基金澳門街舞舞劇“得閒飲茶”多媒體設計，11月1日開始巡演。',
+        image: dexianyincha,
+      },
+      {
+        date: '2026年10月17日',
+        text: '明日劇場團隊受邀參加沙特國王大學共同舉辦線上工作坊，吳振博士與馬明博士發言。',
+        link: 'https://www.linkedin.com/feed/update/urn:li:activity:7516969655568166912/',
+        image: kingSaud,
+        video: kingSaudVideo,
       },
       {
         date: '2026年7月21日',
@@ -282,8 +301,16 @@ const pageContent = {
         text: '"Digital Dance: Creation, Technology and Application — New Media, Artificial Intelligence and Embodied Intelligence" has been selected as a 15th Five-Year Plan textbook and will be published by China Textile & Apparel Press by the end of 2026.',
       },
       {
-        date: 'October 2026',
-        text: 'The Theater of Tomorrow team and King Saud University jointly held an online workshop, hosted by Dr. Wu Zhen and Dr. Ma Ming.',
+        date: 'November 1, 2026',
+        text: 'Dr. Wu Zhen was invited to serve as multimedia designer for "De Xian Yin Cha" (Let\'s Have Tea Sometime), a 2026 China National Arts Fund Macao street dance drama, which begins touring on November 1.',
+        image: dexianyincha,
+      },
+      {
+        date: 'October 17, 2026',
+        text: 'The Theater of Tomorrow team was invited to participate in an online workshop co-organized by King Saud University, with Dr. Wu Zhen and Dr. Ma Ming as speakers.',
+        link: 'https://www.linkedin.com/feed/update/urn:li:activity:7516969655568166912/',
+        image: kingSaud,
+        video: kingSaudVideo,
       },
       {
         date: 'July 21, 2026',
@@ -371,6 +398,14 @@ const HomePage = () => {
   const { open: openWaitlist } = useWaitlist();
   const c = pageContent[language] || pageContent['zh-CN'];
   const images = [img001tot, dancer1, dancer2, dancer4, dancer5, dancer7, dancer8, dancer9, tomorrowtheater01, tomorrowtheater02];
+  const [playingVideo, setPlayingVideo] = useState(null);
+
+  useEffect(() => {
+    if (!playingVideo) return;
+    const onKey = (e) => { if (e.key === 'Escape') setPlayingVideo(null); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [playingVideo]);
 
   return (
     <div style={{ backgroundColor: 'var(--bg-base)' }}>
@@ -547,6 +582,36 @@ const HomePage = () => {
                         <p style={{ margin: 0, fontSize: 14, color: 'var(--text-primary)', lineHeight: 1.7 }}>{item.text}</p>
                       )}
                     </div>
+                    {item.image && (
+                      <button
+                        type="button"
+                        onClick={() => setPlayingVideo(item.video ? { type: 'video', src: item.video } : { type: 'image', src: item.image })}
+                        aria-label={item.video ? 'Play video' : 'View image'}
+                        style={{ flexShrink: 0, marginLeft: 'auto', position: 'relative', padding: 0, border: 'none', background: 'none', cursor: 'pointer' }}
+                      >
+                        <img
+                          src={item.image}
+                          alt=""
+                          style={{
+                            width: 96, height: 'auto', display: 'block',
+                            borderRadius: 'var(--radius-md, 8px)',
+                            border: '1px solid var(--border)',
+                          }}
+                        />
+                        {item.video && (
+                          <span style={{
+                            position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                          }}>
+                            <span style={{
+                              width: 32, height: 32, borderRadius: '50%', background: 'rgba(0,0,0,0.55)',
+                              display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            }}>
+                              <Play size={16} color="#fff" fill="#fff" />
+                            </span>
+                          </span>
+                        )}
+                      </button>
+                    )}
                   </div>
                 </ScrollReveal>
               ))}
@@ -807,6 +872,34 @@ const HomePage = () => {
           </ScrollReveal>
         </div>
       </section>
+
+      {playingVideo && (
+        <div
+          onClick={() => setPlayingVideo(null)}
+          style={{
+            position: 'fixed', inset: 0, zIndex: 1000, background: 'rgba(0,0,0,0.85)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16,
+          }}
+        >
+          {playingVideo.type === 'video' ? (
+            <video
+              src={playingVideo.src}
+              controls
+              autoPlay
+              playsInline
+              onClick={(e) => e.stopPropagation()}
+              style={{ maxWidth: '100%', maxHeight: '90vh', borderRadius: 'var(--radius-lg)' }}
+            />
+          ) : (
+            <img
+              src={playingVideo.src}
+              alt=""
+              onClick={(e) => e.stopPropagation()}
+              style={{ maxWidth: '100%', maxHeight: '90vh', borderRadius: 'var(--radius-lg)' }}
+            />
+          )}
+        </div>
+      )}
     </div>
   );
 };
