@@ -107,7 +107,7 @@ const pageContent = {
       },
       {
         date: '2026年11月1日',
-        text: '吴振博士受邀担任2026年国家艺术基金澳门街舞舞剧“得闲饮茶”多媒体设计，11月1日开始巡演。',
+        text: '吴振博士受邀担任2026年国家艺术基金澳门街舞舞剧“得闲饮茶”多媒体设计，11月1日开始在广州、珠海、澳门巡演。',
         image: dexianyincha,
       },
       {
@@ -205,7 +205,7 @@ const pageContent = {
       },
       {
         date: '2026年11月1日',
-        text: '吳振博士受邀擔任2026年國家藝術基金澳門街舞舞劇“得閒飲茶”多媒體設計，11月1日開始巡演。',
+        text: '吳振博士受邀擔任2026年國家藝術基金澳門街舞舞劇“得閒飲茶”多媒體設計，11月1日開始在廣州、珠海、澳門巡演。',
         image: dexianyincha,
       },
       {
@@ -303,7 +303,7 @@ const pageContent = {
       },
       {
         date: 'November 1, 2026',
-        text: 'Dr. Wu Zhen was invited to serve as multimedia designer for "De Xian Yin Cha" (Let\'s Have Tea Sometime), a 2026 China National Arts Fund Macao street dance drama, which begins touring on November 1.',
+        text: 'Dr. Wu Zhen was invited to serve as multimedia designer for "De Xian Yin Cha" (Let\'s Have Tea Sometime), a 2026 China National Arts Fund Macao street dance drama, which begins touring in Guangzhou, Zhuhai and Macao on November 1.',
         image: dexianyincha,
       },
       {
