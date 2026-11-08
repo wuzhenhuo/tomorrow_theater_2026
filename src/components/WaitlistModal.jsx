@@ -13,7 +13,7 @@ import { useWaitlist } from '../context/WaitlistContext';
 const TEXT = {
   'zh-CN': {
     title: '新版本预约',
-    subtitle: '填写以下信息，我们将在新版本上线时第一时间与您联系',
+    subtitle: '上线日期尚未公布。填写后，团队将通过您提供的联系方式通知开放进度及可用的试用安排。',
     name: '姓名',
     namePlaceholder: '请输入您的姓名',
     background: '专业背景',
@@ -30,7 +30,7 @@ const TEXT = {
   },
   'zh-TW': {
     title: '新版本預約',
-    subtitle: '填寫以下資訊，我們將在新版本上線時第一時間與您聯繫',
+    subtitle: '上線日期尚未公布。填寫後，團隊將透過您提供的聯繫方式通知開放進度及可用的試用安排。',
     name: '姓名',
     namePlaceholder: '請輸入您的姓名',
     background: '專業背景',
@@ -47,7 +47,7 @@ const TEXT = {
   },
   en: {
     title: 'Join the Waitlist',
-    subtitle: "Fill in your details and we'll contact you when the new version launches.",
+    subtitle: "Launch date is not announced. The team will contact you with launch updates and trial arrangements when available.",
     name: 'Name',
     namePlaceholder: 'Enter your name',
     background: 'Professional Background',

@@ -4,42 +4,43 @@ import {
   Award, MapPin, ExternalLink,
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { VersionComparison, ProductLinks } from './ProductPage';
 import ScrollReveal from '../components/ScrollReveal';
 
 const pageContent = {
   'zh-CN': {
-    heroTitle1: '「明日劇場」',
+    heroTitle1: '「明日剧场」',
     heroTitle2: '数智虚拟展演平台',
-    heroDesc: '由北京師範大學未來設計學院種子基金支持，視覺藝術家吳振擔任項目負責人。結合現代科技與劇場表演、身體動態、造型藝術與空間設計，構建起一個以人工智慧與數字表演為核心的創新平台。',
+    heroDesc: '由北京师范大学未来设计学院种子基金支持，视觉藝术家吴振担任项目负责人。结合现代科技与剧场表演、身体动态、造型藝术与空间设计，构建起一个以人工智能与数字表演为核心的创新平台。',
     introTitle: '项目简介',
-    introP1: '你是否曾幻想，在虛擬空間中打造專屬替身，結交志同道合的朋友，並沉浸於充滿未來感的數字演藝創作世界中？「明日劇場」數智虛擬展演平台，正是為此而生。',
-    introP2: '「明日劇場」結合現代科技與劇場表演、身體動態、造型藝術與空間設計，構建起一個以人工智慧與數字表演為核心，涵蓋人文藝術、互動體驗、網絡技術、圖形學、動作捕捉等八大模塊的創新平台。',
-    introP3: '這是國內首個將元宇宙虛擬劇場概念具象化，並融合視訊通訊與動作捕捉技術的沉浸式藝術展演空間。',
+    introP1: '你是否曾幻想，在虚拟空间中打造專屬替身，结交志同道合的朋友，并沉浸於充滿未来感的数字演藝创作世界中？「明日剧场」数智虚拟展演平台，正是为此而生。',
+    introP2: '「明日剧场」结合现代科技与剧场表演、身体动态、造型藝术与空间设计，构建起一个以人工智能与数字表演为核心，涵盖人文藝术、互动体驗、网络技术、图形学、动作捕捉等八大模块的创新平台。',
+    introP3: '这是国內首个将元宇宙虚拟剧场概念具象化，并融合视讯通讯与动作捕捉技术的沉浸式藝术展演空间。',
     coreFeatures: '核心特色',
     coreF1: '八大模块创新平台', coreF2: '元宇宙虚拟剧场',
     coreF3: '动作捕捉技术', coreF4: '沉浸式艺术展演',
     innovTitle: '创新功能与应用场景',
-    innovDesc: '作为一项开创性实验平台，「明日劇場」大幅拓宽了传统剧场的应用边界',
+    innovDesc: '作为一项开创性实验平台，「明日剧场」大幅拓宽了传统剧场的应用边界',
     features: [
-      { title: '超越时空限制', description: '打破地理与时间的藩籬，艺术家可透过虚拟化身，在雲端合作创作并以数字资产形式永久保存。观众亦可透过VR、电脑或平板等设备「走进」剧场。' },
+      { title: '超越时空限制', description: '打破地理与时间的藩篱，艺术家可透过虚拟化身，在云端合作创作并以数字资产形式永久保存。观众亦可透过VR、电脑或平板等设备「走进」剧场。' },
       { title: '多元社交与互动空间', description: '平台不仅是虚拟剧场，亦是虚拟博物馆与公共社交天地。用户可自定义虚拟形象，参与艺术作品展示、互动交流、表演与创作教学。' },
       { title: '异地教育与实践', description: '学生与表演爱好者可通过交互设备与虚拟老师进行即时学习与实作，并进入逼真的虚拟舞台环境。' },
       { title: '数字资产与保存', description: '创作者的虚拟内容可永久存储为可持续加工的数字资产，观众则能获得深度沉浸式体验。' },
-      { title: '文化传承与数位展演', description: '平台兼具虚拟剧场与数位博物馆功能。已成功将非遗文化热巴舞的传承者索朗亚次的舞蹈数据收录其中。' },
+      { title: '文化传承与数字展演', description: '平台兼具虚拟剧场与数字博物馆功能。已成功将非遗文化热巴舞的传承者索朗亚次的舞蹈数据收录其中。' },
     ],
     modulesTitle: '模组化架构与技术特色',
-    modulesDesc: '「明日劇場」将整体场景设于漂浮于外太空的虚拟宇宙中，各式剧场星球灵感来自中国国家大剧院、苏州园林、水上剧场与莎士比亚环球剧院',
+    modulesDesc: '「明日剧场」将整体场景设于漂浮于外太空的虚拟宇宙中，各式剧场星球灵感来自中国国家大剧院、苏州园林、水上剧场与莎士比亚环球剧院',
     modules: [
-      { title: '数位美术馆', description: '观众可以上传自己的绘画、装置作品，举办数字个展' },
-      { title: '数位剧场', description: '提供多种风格舞台，如黑匣子实验剧场、鏡框式舞台、古典戏台等' },
-      { title: '视讯会议系统', description: '支援远距团队协作与即时研讨' },
+      { title: '数字美术馆', description: '观众可以上传自己的绘画、装置作品，举办数字个展' },
+      { title: '数字剧场', description: '提供多种风格舞台，如黑匣子实验剧场、镜框式舞台、古典戏台等' },
+      { title: '视讯会议系统', description: '支持远距团队协作与即时研讨' },
       { title: '动作数据库', description: '收录表演动作资料供分析与应用', links: ['https://www.dancelab.cn/#/index', 'https://addressable-9gza33lieadc81da-1253337800.tcloudbaseapp.com/TOT/dancelab/0.5/index.html'] },
-      { title: '运动捕捉模块', description: '兼容各型光学、红外与慣性动捕系统，实现高度还原的角色演绎' },
-      { title: '人工智慧模组', description: '结合AIGC驱动的数字人，担任讲解员，教师，演员，推动智能演艺发展' },
+      { title: '运动捕捉模块', description: '兼容各型光学、红外与惯性动捕系统，实现高度还原的角色演绎' },
+      { title: '人工智能模组', description: '结合AIGC驱动的数字人，担任讲解员，教师，演员，推动智能演艺发展' },
     ],
     versions: ['专业版 Pro', '工作室版 Studio', '基础版 Base'],
     versionTitle: '版本支持',
-    versionDesc: '「明日劇場」基于不同的硬件需求分为三个版本，分别使用Unreal、Unity开发',
+    versionDesc: '「明日剧场」基于不同的硬件需求分为三个版本，分别使用Unreal、Unity开发',
     academicTitle: '学术成果',
     academicDesc: '平台在学术研究和产业应用方面取得了丰硕成果',
     papersTitle: '研究论文', awardsTitle: '获奖情况', locationsTitle: '落地应用',
@@ -52,12 +53,12 @@ const pageContent = {
       '2025AI元宇宙1000优秀产品目录与示范案例（四星级）',
       '2025中国元宇宙星级供应商（四星级）',
       '2024AI元宇宙1000优秀产品目录与示范案例（三星级）',
-      '2025廣州科技創新創業大賽港澳台賽優勝獎',
+      '2025广州科技创新创業大赛港澳台赛优胜奖',
       '2024中国教育学会课题立项',
-      '2023中國國際大學生雙創賽銀獎',
-      '2023理創大賽銀獎（索尼/理光）',
-      '2023入選Unity黑馬計劃',
-      '2022TCDIG全球數字科技創意設計大賽銀獎',
+      '2023中国国際大学生雙创赛银奖',
+      '2023理创大赛银奖（索尼/理光）',
+      '2023入选Unity黑馬计划',
+      '2022TCDIG全球数字科技创意设计大赛银奖',
     ],
     locations: [
       '澳门青年创业孵化中心（澳门）', '聚能湾国家级科技企业孵化中心（上海）',
@@ -347,7 +348,7 @@ const PlatformPage = () => {
                           onMouseEnter={e => e.currentTarget.style.opacity = '0.7'}
                           onMouseLeave={e => e.currentTarget.style.opacity = '1'}
                         >
-                          <ExternalLink size={11} /> {url.length > 40 ? url.substring(0, 40) + '…' : url}
+                          <ExternalLink size={11} /> {li === 0 ? 'DanceLab' : language === 'en' ? 'DanceLab legacy demo' : language === 'zh-TW' ? 'DanceLab 歷史體驗版' : 'DanceLab 历史体验版'}
                         </a>
                       ))}
                     </div>
@@ -373,6 +374,8 @@ const PlatformPage = () => {
 
       <div className="divider" />
 
+      <VersionComparison />
+      <div className="container"><ProductLinks /></div>
       {/* ── Academic ── */}
       <section className="section">
         <div className="container">

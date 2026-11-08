@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useWaitlist } from '../context/WaitlistContext';
+import { ProductLinks } from './ProductPage';
 import ScrollReveal from '../components/ScrollReveal';
 
 import img001tot from '../assets/images/001tot.JPG';
@@ -20,6 +21,9 @@ import dancer9 from '../assets/images/dancer9.png';
 import tomorrowtheater01 from '../assets/images/tomorrowtheater01.png';
 import tomorrowtheater02 from '../assets/images/tomorrowtheater02.png';
 import poster from '../assets/images/poster.png';
+import kingSaud from '../assets/KingSaud.png';
+import kingSaudVideo from '../assets/KingSaud.mp4';
+import dexianyincha from '../assets/dexianyincha.JPG';
 
 const pageContent = {
   'zh-CN': {
@@ -39,8 +43,8 @@ const pageContent = {
     downloadChingmu: '交互系统下载-青瞳(Chingmu)',
     downloadNote: '历史版本支持在 Windows 系统上运行；移动版本可安装于 Android 手机及平板设备；交互系统可与相应的动作捕捉硬件连接，实现数据采集与实时交互。如需其他动作捕捉设备的交互系统，请与团队联系',
     stats: [
-      { value: '9+', label: '国际奖项' },
-      { value: '6+', label: '合作机构' },
+      { value: '9', label: '奖项与项目荣誉' },
+      { value: '6', label: '合作机构' },
       { value: '2', label: '课程体系' },
     ],
     coreTitle: '三大核心模块',
@@ -98,12 +102,20 @@ const pageContent = {
     newsDesc: '关注明日剧场的最新合作与活动进展',
     newsItems: [
       {
-        date: '2026年底',
+        date: '出版预告 · 预计2026年底',
         text: '《数字舞蹈：创作、技术与应用——新媒体、人工智能与具身智能》入选十五五规划教材，将于2026年底由中国纺织出版社出版。',
       },
       {
-        date: '2026年10月',
-        text: '明日剧场团队与沙特国王大学共同举办线上工作坊，吴振博士和马明博士主持。',
+        date: '2026年11月1日',
+        text: '吴振博士受邀担任2026年国家艺术基金澳门街舞舞剧“得闲饮茶”多媒体设计，11月1日开始巡演。',
+        image: dexianyincha,
+      },
+      {
+        date: '2026年10月17日',
+        text: '明日剧场团队受邀参加沙特国王大学共同举办线上工作坊，吴振博士与马明博士发言。',
+        link: 'https://www.linkedin.com/feed/update/urn:li:activity:7516969655568166912/',
+        image: kingSaud,
+        video: kingSaudVideo,
       },
       {
         date: '2026年7月21日',
@@ -129,8 +141,8 @@ const pageContent = {
     downloadChingmu: '交互系統下載-青瞳(Chingmu)',
     downloadNote: '歷史版本支持在 Windows 系統上運行；移動版本可安裝於 Android 手機及平板設備；交互系統可與相應的動作捕捉硬件連接，實現數據採集與實時交互。如需其他動作捕捉設備的交互系統，請與團隊聯繫',
     stats: [
-      { value: '9+', label: '國際獎項' },
-      { value: '6+', label: '合作機構' },
+      { value: '9', label: '獎項與項目榮譽' },
+      { value: '6', label: '合作機構' },
       { value: '2', label: '課程體系' },
     ],
     coreTitle: '三大核心模組',
@@ -188,12 +200,20 @@ const pageContent = {
     newsDesc: '關注明日劇場的最新合作與活動進展',
     newsItems: [
       {
-        date: '2026年底',
+        date: '出版預告 · 預計2026年底',
         text: '《數字舞蹈：創作、技術與應用——新媒體、人工智能與具身智能》入選十五五規劃教材，將於2026年底由中國紡織出版社出版。',
       },
       {
-        date: '2026年10月',
-        text: '明日劇場團隊與沙特國王大學共同舉辦線上工作坊，吳振博士和馬明博士主持。',
+        date: '2026年11月1日',
+        text: '吳振博士受邀擔任2026年國家藝術基金澳門街舞舞劇“得閒飲茶”多媒體設計，11月1日開始巡演。',
+        image: dexianyincha,
+      },
+      {
+        date: '2026年10月17日',
+        text: '明日劇場團隊受邀參加沙特國王大學共同舉辦線上工作坊，吳振博士與馬明博士發言。',
+        link: 'https://www.linkedin.com/feed/update/urn:li:activity:7516969655568166912/',
+        image: kingSaud,
+        video: kingSaudVideo,
       },
       {
         date: '2026年7月21日',
@@ -219,8 +239,8 @@ const pageContent = {
     downloadChingmu: 'Interaction System Download - Chingmu',
     downloadNote: 'The legacy version runs on Windows; the mobile version can be installed on Android phones and tablets; the interaction system connects to the corresponding motion capture hardware for data acquisition and real-time interaction. For interaction systems with other motion capture devices, please contact our team',
     stats: [
-      { value: '9+', label: 'International Awards' },
-      { value: '6+', label: 'Partner Institutions' },
+      { value: '9', label: 'Awards & Recognition' },
+      { value: '6', label: 'Partner Institutions' },
       { value: '2', label: 'Course Systems' },
     ],
     coreTitle: 'Three Core Modules',
@@ -278,12 +298,20 @@ const pageContent = {
     newsDesc: "Follow Theater of Tomorrow's latest partnerships and events",
     newsItems: [
       {
-        date: 'Late 2026',
+        date: 'Upcoming · Late 2026',
         text: '"Digital Dance: Creation, Technology and Application — New Media, Artificial Intelligence and Embodied Intelligence" has been selected as a 15th Five-Year Plan textbook and will be published by China Textile & Apparel Press by the end of 2026.',
       },
       {
-        date: 'October 2026',
-        text: 'The Theater of Tomorrow team and King Saud University jointly held an online workshop, hosted by Dr. Wu Zhen and Dr. Ma Ming.',
+        date: 'November 1, 2026',
+        text: 'Dr. Wu Zhen was invited to serve as multimedia designer for "De Xian Yin Cha" (Let\'s Have Tea Sometime), a 2026 China National Arts Fund Macao street dance drama, which begins touring on November 1.',
+        image: dexianyincha,
+      },
+      {
+        date: 'October 17, 2026',
+        text: 'The Theater of Tomorrow team was invited to participate in an online workshop co-organized by King Saud University, with Dr. Wu Zhen and Dr. Ma Ming as speakers.',
+        link: 'https://www.linkedin.com/feed/update/urn:li:activity:7516969655568166912/',
+        image: kingSaud,
+        video: kingSaudVideo,
       },
       {
         date: 'July 21, 2026',
@@ -371,6 +399,14 @@ const HomePage = () => {
   const { open: openWaitlist } = useWaitlist();
   const c = pageContent[language] || pageContent['zh-CN'];
   const images = [img001tot, dancer1, dancer2, dancer4, dancer5, dancer7, dancer8, dancer9, tomorrowtheater01, tomorrowtheater02];
+  const [playingVideo, setPlayingVideo] = useState(null);
+
+  useEffect(() => {
+    if (!playingVideo) return;
+    const onKey = (e) => { if (e.key === 'Escape') setPlayingVideo(null); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [playingVideo]);
 
   return (
     <div style={{ backgroundColor: 'var(--bg-base)' }}>
@@ -449,33 +485,16 @@ const HomePage = () => {
             </ul>
           </div>
 
+          <p className="text-body" style={{ fontSize: 12 }}>{language === 'en' ? 'Academic collaboration: BNU Future Design Art Museum (Zhuhai) · MUST Faculty of Humanities and Arts' : language === 'zh-TW' ? '院校合作：北京師範大學未來設計美術館（珠海） · 澳門科技大學人文藝術學院' : '院校合作：北京师范大学未来设计美术馆（珠海） · 澳门科技大学人文艺术学院'}</p>
+          <ProductLinks />
           {/* CTAs */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginBottom: 16 }}>
             <button className="btn btn-primary" onClick={openWaitlist}>
               <Play size={14} /> {c.tryPlatform}
             </button>
-            <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/1uxI4RKU8F-E4AmiVhfNtKqat2q9JnY91/view?usp=drive_link', '_blank')}>
-              <ArrowRight size={14} /> {c.downloadHistory}
-            </button>
-            <button className="btn btn-secondary" onClick={() => window.open('https://addressable-9gza33lieadc81da-1253337800.tcloudbaseapp.com/TOT/android/TOT_v1.3.0.apk', '_blank')}>
-              <ArrowRight size={14} /> {c.downloadAndroid}
-            </button>
-            <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/1UdnmmfxlIOmkLwtLyHIvyEzv95besYUa/view?usp=drive_link', '_blank')}>
-              <ArrowRight size={14} /> {c.downloadKinect}
-            </button>
-            <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/16dtSM_a1GKOUy55wj6laAwUsGfA3Bpoq/view?usp=drive_link', '_blank')}>
-              <ArrowRight size={14} /> {c.downloadMocopi}
-            </button>
-            <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/1SHQaCGb6UjYAOnG6F7futIkcHOu3L1TV/view?usp=sharing', '_blank')}>
-              <ArrowRight size={14} /> {c.downloadNoitom}
-            </button>
-            <button className="btn btn-secondary" onClick={() => window.open('https://drive.google.com/file/d/1JAxzJ9TxcoaeNknvwxYvXnpDaAR1i7H4/view?usp=drive_link', '_blank')}>
-              <ArrowRight size={14} /> {c.downloadChingmu}
-            </button>
+            <Link className="btn btn-secondary" to="/resources">{language === 'en' ? 'Legacy downloads & studio hardware' : language === 'zh-TW' ? '歷史版本與工作室硬體下載' : '历史版本与工作室硬件下载'} →</Link>
           </div>
-          <p style={{ color: 'var(--text-muted-vis)', fontSize: 13, margin: '0 0 56px 0' }}>
-            {c.downloadNote} <Link to="/contact" style={{ color: 'var(--accent)' }}>{c.contactConsult}</Link>
-          </p>
+          <p className="text-body" style={{ marginBottom: 36 }}>{language === 'en' ? '2026 AI systems: in development. Existing Windows, Android and capture tools are available in Resources.' : language === 'zh-TW' ? '2026 AI 系統開發中；現有 Windows、Android 與專業動捕工具請前往資源中心。' : '2026 AI 系统开发中；现有 Windows、Android 与专业动捕工具请前往资源中心。'}</p>
 
           {/* Stats */}
           <div style={{ display: 'flex', gap: 0, flexWrap: 'wrap' }}>
@@ -484,7 +503,7 @@ const HomePage = () => {
                 {i > 0 && <div style={{ width: 1, background: 'var(--border-strong)', margin: '0 36px', alignSelf: 'stretch' }} />}
                 <div>
                   <div className="stat-value" style={{ background: 'var(--gradient-text)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                    {stat.value}
+                    {i === 0 ? c.achievements.length : i === 1 ? c.locations.length : stat.value}
                   </div>
                   <div className="text-label" style={{ marginTop: 6 }}>{stat.label}</div>
                 </div>
@@ -521,7 +540,7 @@ const HomePage = () => {
               />
             </ScrollReveal>
             <div style={{ border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
-              {c.newsItems.map((item, i) => (
+              {[...c.newsItems.slice(1), c.newsItems[0]].map((item, i) => (
                 <ScrollReveal key={i} delay={i * 0.08}>
                   <div style={{
                     display: 'flex', alignItems: 'flex-start', gap: 14,
@@ -547,6 +566,36 @@ const HomePage = () => {
                         <p style={{ margin: 0, fontSize: 14, color: 'var(--text-primary)', lineHeight: 1.7 }}>{item.text}</p>
                       )}
                     </div>
+                    {item.image && (
+                      <button
+                        type="button"
+                        onClick={() => setPlayingVideo(item.video ? { type: 'video', src: item.video } : { type: 'image', src: item.image })}
+                        aria-label={item.video ? 'Play video' : 'View image'}
+                        style={{ flexShrink: 0, marginLeft: 'auto', position: 'relative', padding: 0, border: 'none', background: 'none', cursor: 'pointer' }}
+                      >
+                        <img
+                          src={item.image}
+                          alt=""
+                          style={{
+                            width: 96, height: 'auto', display: 'block',
+                            borderRadius: 'var(--radius-md, 8px)',
+                            border: '1px solid var(--border)',
+                          }}
+                        />
+                        {item.video && (
+                          <span style={{
+                            position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                          }}>
+                            <span style={{
+                              width: 32, height: 32, borderRadius: '50%', background: 'rgba(0,0,0,0.55)',
+                              display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            }}>
+                              <Play size={16} color="#fff" fill="#fff" />
+                            </span>
+                          </span>
+                        )}
+                      </button>
+                    )}
                   </div>
                 </ScrollReveal>
               ))}
@@ -807,6 +856,34 @@ const HomePage = () => {
           </ScrollReveal>
         </div>
       </section>
+
+      {playingVideo && (
+        <div
+          onClick={() => setPlayingVideo(null)}
+          style={{
+            position: 'fixed', inset: 0, zIndex: 1000, background: 'rgba(0,0,0,0.85)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16,
+          }}
+        >
+          {playingVideo.type === 'video' ? (
+            <video
+              src={playingVideo.src}
+              controls
+              autoPlay
+              playsInline
+              onClick={(e) => e.stopPropagation()}
+              style={{ maxWidth: '100%', maxHeight: '90vh', borderRadius: 'var(--radius-lg)' }}
+            />
+          ) : (
+            <img
+              src={playingVideo.src}
+              alt=""
+              onClick={(e) => e.stopPropagation()}
+              style={{ maxWidth: '100%', maxHeight: '90vh', borderRadius: 'var(--radius-lg)' }}
+            />
+          )}
+        </div>
+      )}
     </div>
   );
 };

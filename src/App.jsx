@@ -10,6 +10,7 @@ import { WaitlistProvider } from './context/WaitlistContext';
 import { CourseEnrollProvider } from './context/CourseEnrollContext';
 import { ContactInquiryProvider } from './context/ContactInquiryContext';
 import { useTheme } from './hooks/useTheme';
+import ProductPage from './pages/ProductPage';
 import HomePage from './pages/HomePage';
 import PlatformPage from './pages/PlatformPage';
 import CoursesPage from './pages/CoursesPage';
@@ -29,6 +30,9 @@ function AppInner() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/products/knowledge" element={<ProductPage product="knowledge" />} />
+<Route path="/products/dance" element={<ProductPage product="dance" />} />
+<Route path="/products/choreography" element={<ProductPage product="choreography" />} />
           <Route path="/platform" element={<PlatformPage />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/team" element={<TeamPage />} />
